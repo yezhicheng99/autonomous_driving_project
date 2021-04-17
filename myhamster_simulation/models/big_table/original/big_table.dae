@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="utf-8"?>
+<COLLADA xmlns="http://www.collada.org/2005/11/COLLADASchema" version="1.4.1">
+  <asset>
+    <contributor>
+      <author>Blender User</author>
+      <authoring_tool>Blender 2.71.0 commit date:2014-06-12, commit time:18:39, hash:169c95b</authoring_tool>
+    </contributor>
+    <created>2016-05-08T16:51:02</created>
+    <modified>2016-05-08T16:51:02</modified>
+    <unit name="meter" meter="1"/>
+    <up_axis>Z_UP</up_axis>
+  </asset>
+  <library_cameras>
+    <camera id="Camera-camera" name="Camera">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+    <camera id="Camera_001-camera" name="Camera.001">
+      <optics>
+        <technique_common>
+          <perspective>
+            <xfov sid="xfov">49.13434</xfov>
+            <aspect_ratio>1.777778</aspect_ratio>
+            <znear sid="znear">0.1</znear>
+            <zfar sid="zfar">100</zfar>
+          </perspective>
+        </technique_common>
+      </optics>
+      <extra>
+        <technique profile="blender">
+          <YF_dofdist>0</YF_dofdist>
+          <shiftx>0</shiftx>
+          <shifty>0</shifty>
+        </technique>
+      </extra>
+    </camera>
+  </library_cameras>
+  <library_lights>
+    <light id="Lamp-light" name="Lamp">
+      <technique_common>
+        <point>
+          <color sid="color">1 1 1</color>
+          <constant_attenuation>1</constant_attenuation>
+          <linear_attenuation>0</linear_attenuation>
+          <quadratic_attenuation>0.00111109</quadratic_attenuation>
+        </point>
+      </technique_common>
+      <extra>
+        <technique profile="blender">
+          <adapt_thresh>0.000999987</adapt_thresh>
+          <area_shape>1</area_shape>
+          <area_size>0.1</area_size>
+          <area_sizey>0.1</area_sizey>
+          <area_sizez>1</area_sizez>
+          <atm_distance_factor>1</atm_distance_factor>
+          <atm_extinction_factor>1</atm_extinction_factor>
+          <atm_turbidity>2</atm_turbidity>
+          <att1>0</att1>
+          <att2>1</att2>
+          <backscattered_light>1</backscattered_light>
+          <bias>1</bias>
+          <blue>1</blue>
+          <buffers>1</buffers>
+          <bufflag>0</bufflag>
+          <bufsize>2880</bufsize>
+          <buftype>2</buftype>
+          <clipend>30.002</clipend>
+          <clipsta>1.000799</clipsta>
+          <compressthresh>0.04999995</compressthresh>
+          <dist sid="blender_dist">29.99998</dist>
+          <energy sid="blender_energy">1</energy>
+          <falloff_type>2</falloff_type>
+          <filtertype>0</filtertype>
+          <flag>0</flag>
+          <gamma sid="blender_gamma">1</gamma>
+          <green>1</green>
+          <halo_intensity sid="blnder_halo_intensity">1</halo_intensity>
+          <horizon_brightness>1</horizon_brightness>
+          <mode>8192</mode>
+          <ray_samp>1</ray_samp>
+          <ray_samp_method>1</ray_samp_method>
+          <ray_samp_type>0</ray_samp_type>
+          <ray_sampy>1</ray_sampy>
+          <ray_sampz>1</ray_sampz>
+          <red>1</red>
+          <samp>3</samp>
+          <shadhalostep>0</shadhalostep>
+          <shadow_b sid="blender_shadow_b">0</shadow_b>
+          <shadow_g sid="blender_shadow_g">0</shadow_g>
+          <shadow_r sid="blender_shadow_r">0</shadow_r>
+          <sky_colorspace>0</sky_colorspace>
+          <sky_exposure>1</sky_exposure>
+          <skyblendfac>1</skyblendfac>
+          <skyblendtype>1</skyblendtype>
+          <soft>3</soft>
+          <spotblend>0.15</spotblend>
+          <spotsize>75</spotsize>
+          <spread>1</spread>
+          <sun_brightness>1</sun_brightness>
+          <sun_effect_type>0</sun_effect_type>
+          <sun_intensity>1</sun_intensity>
+          <sun_size>1</sun_size>
+          <type>0</type>
+        </technique>
+      </extra>
+    </light>
+  </library_lights>
+  <library_images>
+    <image id="wood_jpg" name="wood_jpg">
+      <init_from>wood.png</init_from>
+    </image>
+  </library_images>
+  <library_effects>
+    <effect id="dbl_ROUNDLESG_001-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.4141178 0.4266669 0.4367059 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="dbl_ROUNDLESG_002-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="dbl_ROUNDLESG_001_ncl1_1-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.4141178 0.4266669 0.4367059 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="dbl_ROUNDLESG_002_ncl1_1-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="Material_003-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0.65 0.65 0.65 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.10752 0.10752 0.10752 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0.25 0.25 0.25 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">50</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="dbl_ROUNDLESG_001_ncl1_4-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.4141178 0.4266669 0.4367059 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="dbl_ROUNDLESG_002_ncl1_4-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="dbl_ROUNDLESG_001_ncl1_5-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.4141178 0.4266669 0.4367059 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="dbl_ROUNDLESG_002_ncl1_5-effect">
+      <profile_COMMON>
+        <technique sid="common">
+          <phong>
+            <emission>
+              <color sid="emission">0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color sid="ambient">0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <color sid="diffuse">0.64 0.64 0.64 1</color>
+            </diffuse>
+            <specular>
+              <color sid="specular">0 0 0 1</color>
+            </specular>
+            <shininess>
+              <float sid="shininess">2</float>
+            </shininess>
+            <index_of_refraction>
+              <float sid="index_of_refraction">1</float>
+            </index_of_refraction>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_materials>
+    <material id="dbl_ROUNDLESG_001-material" name="dbl_ROUNDLESG_001">
+      <instance_effect url="#dbl_ROUNDLESG_001-effect"/>
+    </material>
+    <material id="dbl_ROUNDLESG_002-material" name="dbl_ROUNDLESG_002">
+      <instance_effect url="#dbl_ROUNDLESG_002-effect"/>
+    </material>
+    <material id="dbl_ROUNDLESG_001_ncl1_1-material" name="dbl_ROUNDLESG_001_ncl1_1">
+      <instance_effect url="#dbl_ROUNDLESG_001_ncl1_1-effect"/>
+    </material>
+    <material id="dbl_ROUNDLESG_002_ncl1_1-material" name="dbl_ROUNDLESG_002_ncl1_1">
+      <instance_effect url="#dbl_ROUNDLESG_002_ncl1_1-effect"/>
+    </material>
+    <material id="Material_003-material" name="Material_003">
+      <instance_effect url="#Material_003-effect"/>
+    </material>
+    <material id="dbl_ROUNDLESG_001_ncl1_4-material" name="dbl_ROUNDLESG_001_ncl1_4">
+      <instance_effect url="#dbl_ROUNDLESG_001_ncl1_4-effect"/>
+    </material>
+    <material id="dbl_ROUNDLESG_002_ncl1_4-material" name="dbl_ROUNDLESG_002_ncl1_4">
+      <instance_effect url="#dbl_ROUNDLESG_002_ncl1_4-effect"/>
+    </material>
+    <material id="dbl_ROUNDLESG_001_ncl1_5-material" name="dbl_ROUNDLESG_001_ncl1_5">
+      <instance_effect url="#dbl_ROUNDLESG_001_ncl1_5-effect"/>
+    </material>
+    <material id="dbl_ROUNDLESG_002_ncl1_5-material" name="dbl_ROUNDLESG_002_ncl1_5">
+      <instance_effect url="#dbl_ROUNDLESG_002_ncl1_5-effect"/>
+    </material>
+  </library_materials>
+  <library_geometries>
+    <geometry id="ROUNDLESG_010Mesh-mesh" name="ROUNDLESG_010Mesh">
+      <mesh>
+        <source id="ROUNDLESG_010Mesh-mesh-positions">
+          <float_array id="ROUNDLESG_010Mesh-mesh-positions-array" count="360">-1.113549 1.113558 14.0748 -0.787397 1.363824 -13.2874 -1.113549 1.113558 -13.2874 -0.787397 1.363824 14.0748 -1.521138 -0.407585 14.0748 -1.363815 -0.787397 -13.2874 -1.363815 -0.787397 14.0748 -1.521138 -0.407585 -13.2874 -1.521138 0.407593 14.0748 -1.574798 4e-6 -13.2874 -1.574798 4e-6 14.0748 -1.521138 0.407593 -13.2874 -0.407584 -1.521139 14.0748 -0.787397 -1.363815 -13.2874 -0.407584 -1.521139 -13.2874 -0.787397 -1.363815 14.0748 -0.407584 1.521147 14.0748 5e-6 1.574808 -13.2874 -0.407584 1.521147 -13.2874 5e-6 1.574808 14.0748 5e-6 -1.574799 14.0748 5e-6 -1.574799 -13.2874 -1.113549 -1.11355 -13.2874 -1.113549 -1.11355 14.0748 0.787406 -1.363815 14.0748 0.407594 -1.521139 -13.2874 0.787406 -1.363815 -13.2874 0.407594 -1.521139 14.0748 0.407594 1.521147 14.0748 0.787406 1.363824 -13.2874 0.407594 1.521147 -13.2874 0.787406 1.363824 14.0748 -1.363815 0.787406 -13.2874 -1.363815 0.787406 14.0748 1.574808 4e-6 -13.2874 1.521148 -0.407585 14.0748 1.521148 -0.407585 -13.2874 1.574808 4e-6 14.0748 1.363824 -0.787397 14.0748 1.363824 -0.787397 -13.2874 1.113559 1.113558 -13.2874 1.363824 0.787406 14.0748 1.363824 0.787406 -13.2874 1.113559 1.113558 14.0748 1.113559 -1.11355 14.0748 1.113559 -1.11355 -13.2874 1.521148 0.407593 -13.2874 1.521148 0.407593 14.0748 -0.787397 1.363824 -13.2874 -0.407584 1.521147 -14.0748 -0.787397 1.363824 -14.0748 -0.407584 1.521147 -13.2874 -1.363815 0.787406 -13.2874 -1.521138 0.407593 -14.0748 -1.521138 0.407593 -13.2874 -1.363815 0.787406 -14.0748 -1.113549 1.113558 -13.2874 -1.113549 1.113558 -14.0748 -1.574798 4e-6 -13.2874 -1.521138 -0.407585 -14.0748 -1.521138 -0.407585 -13.2874 -1.574798 4e-6 -14.0748 -1.363815 -0.787397 -14.0748 -1.363815 -0.787397 -13.2874 5e-6 -1.574799 -13.2874 -0.407584 -1.521139 -14.0748 5e-6 -1.574799 -14.0748 -0.407584 -1.521139 -13.2874 -0.787397 -1.363815 -13.2874 -1.113549 -1.11355 -14.0748 -0.787397 -1.363815 -14.0748 -1.113549 -1.11355 -13.2874 0.407594 -1.521139 -13.2874 0.407594 -1.521139 -14.0748 1.113559 -1.11355 -13.2874 0.787406 -1.363815 -14.0748 1.113559 -1.11355 -14.0748 0.787406 -1.363815 -13.2874 1.363824 -0.787397 -14.0748 1.363824 -0.787397 -13.2874 5e-6 1.574808 -14.0748 5e-6 1.574808 -13.2874 1.521148 -0.407585 -14.0748 1.521148 -0.407585 -13.2874 0.407594 1.521147 -14.0748 0.787406 1.363824 -14.0748 1.113559 1.113558 -14.0748 1.363824 0.787406 -14.0748 1.521148 0.407593 -14.0748 1.574808 4e-6 -14.0748 1.574808 4e-6 -13.2874 1.521148 0.407593 -13.2874 1.363824 0.787406 -13.2874 1.113559 1.113558 -13.2874 0.787406 1.363824 -13.2874 0.407594 1.521147 -13.2874 -1.521138 -0.407585 14.0748 -1.521138 0.407593 14.0748 -1.574798 4e-6 14.0748 -1.363815 -0.787397 14.0748 -1.363815 0.787406 14.0748 -1.113549 -1.11355 14.0748 -1.113549 1.113558 14.0748 -0.787397 -1.363815 14.0748 -0.787397 1.363824 14.0748 -0.407584 -1.521139 14.0748 -0.407584 1.521147 14.0748 5e-6 -1.574799 14.0748 5e-6 1.574808 14.0748 0.407594 -1.521139 14.0748 0.407594 1.521147 14.0748 0.787406 -1.363815 14.0748 0.787406 1.363824 14.0748 1.113559 -1.11355 14.0748 1.113559 1.113558 14.0748 1.363824 -0.787397 14.0748 1.363824 0.787406 14.0748 1.521148 -0.407585 14.0748 1.521148 0.407593 14.0748 1.574808 4e-6 14.0748</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_010Mesh-mesh-positions-array" count="120" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_010Mesh-mesh-normals">
+          <float_array id="ROUNDLESG_010Mesh-mesh-normals-array" count="420">-0.7070834 0.7070834 0 -0.4999848 0.8660237 0 -0.7070834 0.7070834 0 -0.4999848 0.8660237 0 -0.9659109 -0.2587969 0 -0.8660237 -0.4999848 0 -0.8660237 -0.4999848 0 -0.9659109 -0.2587969 0 -0.9659109 0.2587969 0 -1 0 0 -1 0 0 -0.9659109 0.2587969 0 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.2587969 0.9659109 0 0 1 0 -0.2587969 0.9659109 0 0 1 0 0 -1 0 0 -1 0 -0.7070834 -0.7070834 0 -0.7070834 -0.7070834 0 0.4999848 -0.8660237 0 0.2587969 -0.9659109 0 0.4999848 -0.8660237 0 0.2587969 -0.9659109 0 0.2587969 0.9659109 0 0.4999848 0.8660237 0 0.2587969 0.9659109 0 0.4999848 0.8660237 0 -0.8660237 0.4999848 0 -0.8660237 0.4999848 0 1 0 0 0.9659109 -0.2587969 0 0.9659109 -0.2587969 0 1 0 0 0.8660237 -0.4999848 0 0.8660237 -0.4999848 0 0.7070834 0.7070834 0 0.8660237 0.4999848 0 0.8660237 0.4999848 0 0.7070834 0.7070834 0 0.7070834 -0.7070834 0 0.7070834 -0.7070834 0 0.9659109 0.2587969 0 0.9659109 0.2587969 0 -0.4999848 0.8660237 0 -0.1900388 0.7092196 -0.6788538 -0.3671072 0.6358532 -0.6788538 -0.2587969 0.9659109 0 -0.8660237 0.4999848 0 -0.7092196 0.1900388 -0.6788538 -0.9659109 0.2587969 0 -0.6358532 0.3671072 -0.6788538 -0.7070834 0.7070834 0 -0.5191809 0.5191809 -0.6788538 -0.9999695 0 0 -0.7092196 -0.1900082 -0.6788538 -0.9659109 -0.2587969 0 -0.7342448 0 -0.6788538 -0.6358532 -0.3671072 -0.6788538 -0.8660237 -0.4999848 0 0 -0.9999695 0 -0.1900082 -0.7092196 -0.6788538 0 -0.7342448 -0.6788538 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.5191809 -0.5191809 -0.6788538 -0.3671072 -0.6358532 -0.6788538 -0.7070834 -0.7070834 0 0.2587969 -0.9659109 0 0.1900388 -0.7092196 -0.6788538 0.7070834 -0.7070834 0 0.3671072 -0.6358532 -0.6788538 0.5191809 -0.5191809 -0.6788538 0.4999848 -0.8660237 0 0.6358532 -0.3671072 -0.6788538 0.8660237 -0.4999848 0 0 0.7342448 -0.6788538 0 0.9999695 0 0.7092196 -0.1900388 -0.6788538 0.9659109 -0.2587969 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0.7342448 0 -0.6788538 1 0 0 0.7092196 0.1900082 -0.6788538 0.9659109 0.2587969 0 0.6358837 0.3671072 -0.6788538 0.8660237 0.4999848 0 0.5191809 0.5191809 -0.6788538 0.7070834 0.7070834 0 0.4999848 0.8660237 0 0.3671072 0.6358837 -0.6788538 0.2587969 0.9659109 0 0.1900082 0.7092196 -0.6788538 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_010Mesh-mesh-normals-array" count="140" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_010Mesh-mesh-map-0">
+          <float_array id="ROUNDLESG_010Mesh-mesh-map-0-array" count="840">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_010Mesh-mesh-map-0-array" count="420" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_010Mesh-mesh-map-1">
+          <float_array id="ROUNDLESG_010Mesh-mesh-map-1-array" count="840">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_010Mesh-mesh-map-1-array" count="420" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ROUNDLESG_010Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#ROUNDLESG_010Mesh-mesh-positions"/>
+        </vertices>
+        <polylist material="dbl_ROUNDLESG_001-material" count="118">
+          <input semantic="VERTEX" source="#ROUNDLESG_010Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROUNDLESG_010Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_010Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_010Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 1 1 2 2 2 1 1 3 0 0 4 3 3 5 4 4 6 5 5 7 6 6 8 5 5 9 4 4 10 7 7 11 8 8 12 9 9 13 10 10 14 9 9 15 8 8 16 11 11 17 12 12 18 13 13 19 14 14 20 13 13 21 12 12 22 15 15 23 16 16 24 17 17 25 18 18 26 17 17 27 16 16 28 19 19 29 20 20 30 14 14 31 21 21 32 14 14 33 20 20 34 12 12 35 10 10 36 7 7 37 4 4 38 7 7 39 10 10 40 9 9 41 15 15 42 22 22 43 13 13 44 22 22 45 15 15 46 23 23 47 24 24 48 25 25 49 26 26 50 25 25 51 24 24 52 27 27 53 3 3 54 18 18 55 1 1 56 18 18 57 3 3 58 16 16 59 28 28 60 29 29 61 30 30 62 29 29 63 28 28 64 31 31 65 0 0 66 32 32 67 33 33 68 32 32 69 0 0 70 2 2 71 19 19 72 30 30 73 17 17 74 30 30 75 19 19 76 28 28 77 34 34 78 35 35 79 36 36 80 35 35 81 34 34 82 37 37 83 6 6 84 22 22 85 23 23 86 22 22 87 6 6 88 5 5 89 36 36 90 38 38 91 39 39 92 38 38 93 36 36 94 35 35 95 40 40 96 41 41 97 42 42 98 41 41 99 40 40 100 43 43 101 39 39 102 44 44 103 45 45 104 44 44 105 39 39 106 38 38 107 46 46 108 37 37 109 34 34 110 37 37 111 46 46 112 47 47 113 31 31 114 40 40 115 29 29 116 40 40 117 31 31 118 43 43 119 42 42 120 47 47 121 46 46 122 47 47 123 42 42 124 41 41 125 44 44 126 26 26 127 45 45 128 26 26 129 44 44 130 24 24 131 33 33 132 11 11 133 8 8 134 11 11 135 33 33 136 32 32 137 27 27 138 21 21 139 25 25 140 21 21 141 27 27 142 20 20 143 48 48 144 49 49 145 50 50 146 49 49 147 48 48 148 51 51 149 52 52 150 53 53 151 54 54 152 53 53 153 52 52 154 55 55 155 56 56 156 50 50 157 57 57 158 50 50 159 56 56 160 48 48 161 56 56 162 55 55 163 52 52 164 55 55 165 56 56 166 57 57 167 58 58 168 59 59 169 60 60 170 59 59 171 58 58 172 61 61 173 60 60 174 62 62 175 63 63 176 62 62 177 60 60 178 59 59 179 64 64 180 65 65 181 66 66 182 65 65 183 64 64 184 67 67 185 68 68 186 69 69 187 70 70 188 69 69 189 68 68 190 71 71 191 72 72 192 66 66 193 73 73 194 66 66 195 72 72 196 64 64 197 74 74 198 75 75 199 76 76 200 75 75 201 74 74 202 77 77 203 78 78 204 74 74 205 76 76 206 74 74 207 78 78 208 79 79 209 51 51 210 80 80 211 49 49 212 80 80 213 51 51 214 81 81 215 82 82 216 79 79 217 78 78 218 79 79 219 82 82 220 83 83 221 54 54 222 61 61 223 58 58 224 61 61 225 54 54 226 53 53 227 67 67 228 70 70 229 65 65 230 70 70 231 67 67 232 68 68 233 53 84 234 59 84 235 61 84 236 59 85 237 53 85 238 55 85 239 59 86 240 55 86 241 62 86 242 62 87 243 55 87 244 57 87 245 62 88 246 57 88 247 69 88 248 69 89 249 57 89 250 50 89 251 69 90 252 50 90 253 70 90 254 70 91 255 50 91 256 49 91 257 70 92 258 49 92 259 65 92 260 65 93 261 49 93 262 80 93 263 65 94 264 80 94 265 66 94 266 66 95 267 80 95 268 84 95 269 66 96 270 84 96 271 73 96 272 73 97 273 84 97 274 85 97 275 73 98 276 85 98 277 75 98 278 75 99 279 85 99 280 86 99 281 75 100 282 86 100 283 76 100 284 76 101 285 86 101 286 87 101 287 76 102 288 87 102 289 78 102 290 78 103 291 87 103 292 88 103 293 78 104 294 88 104 295 82 104 296 82 105 297 88 105 298 89 105 299 89 106 300 83 83 301 82 82 302 83 83 303 89 106 304 90 107 305 88 108 306 90 107 307 89 106 308 90 107 309 88 108 310 91 109 311 87 110 312 91 109 313 88 108 314 91 109 315 87 110 316 92 111 317 77 77 318 73 73 319 75 75 320 73 73 321 77 77 322 72 72 323 86 112 324 92 111 325 87 110 326 92 111 327 86 112 328 93 113 329 94 114 330 86 112 331 85 115 332 86 112 333 94 114 334 93 113 335 63 63 336 69 69 337 71 71 338 69 69 339 63 63 340 62 62 341 95 116 342 85 115 343 84 117 344 85 115 345 95 116 346 94 114 347 81 81 348 84 117 349 80 80 350 84 117 351 81 81 352 95 116 353</p>
+        </polylist>
+        <polylist material="dbl_ROUNDLESG_002-material" count="22">
+          <input semantic="VERTEX" source="#ROUNDLESG_010Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROUNDLESG_010Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_010Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_010Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>96 118 354 97 118 355 98 118 356 97 119 357 96 119 358 99 119 359 97 120 360 99 120 361 100 120 362 100 121 363 99 121 364 101 121 365 100 122 366 101 122 367 102 122 368 102 123 369 101 123 370 103 123 371 102 124 372 103 124 373 104 124 374 104 125 375 103 125 376 105 125 377 104 126 378 105 126 379 106 126 380 106 127 381 105 127 382 107 127 383 106 128 384 107 128 385 108 128 386 109 129 387 108 129 388 107 129 389 108 130 390 109 130 391 110 130 392 110 131 393 109 131 394 111 131 395 110 132 396 111 132 397 112 132 398 112 133 399 111 133 400 113 133 401 112 134 402 113 134 403 114 134 404 114 135 405 113 135 406 115 135 407 114 136 408 115 136 409 116 136 410 116 137 411 115 137 412 117 137 413 116 138 414 117 138 415 118 138 416 118 139 417 117 139 418 119 139 419</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="ROUNDLESG_009Mesh-mesh" name="ROUNDLESG_009Mesh">
+      <mesh>
+        <source id="ROUNDLESG_009Mesh-mesh-positions">
+          <float_array id="ROUNDLESG_009Mesh-mesh-positions-array" count="360">-1.113549 1.113552 14.0748 -0.787397 1.363818 -13.2874 -1.113549 1.113552 -13.2874 -0.787397 1.363818 14.0748 -1.521138 -0.407591 14.0748 -1.363815 -0.787403 -13.2874 -1.363815 -0.787403 14.0748 -1.521138 -0.407591 -13.2874 -1.521138 0.407587 14.0748 -1.574799 -2e-6 -13.2874 -1.574799 -2e-6 14.0748 -1.521138 0.407587 -13.2874 -0.407584 -1.521145 14.0748 -0.787397 -1.363821 -13.2874 -0.407584 -1.521145 -13.2874 -0.787397 -1.363821 14.0748 -0.407584 1.521141 14.0748 5e-6 1.574801 -13.2874 -0.407584 1.521141 -13.2874 5e-6 1.574801 14.0748 5e-6 -1.574805 14.0748 5e-6 -1.574805 -13.2874 -1.113549 -1.113556 -13.2874 -1.113549 -1.113556 14.0748 0.787406 -1.363821 14.0748 0.407594 -1.521145 -13.2874 0.787406 -1.363821 -13.2874 0.407594 -1.521145 14.0748 0.407594 1.521141 14.0748 0.787406 1.363818 -13.2874 0.407594 1.521141 -13.2874 0.787406 1.363818 14.0748 -1.363815 0.7874 -13.2874 -1.363815 0.7874 14.0748 1.574808 -2e-6 -13.2874 1.521147 -0.407591 14.0748 1.521147 -0.407591 -13.2874 1.574808 -2e-6 14.0748 1.363824 -0.787403 14.0748 1.363824 -0.787403 -13.2874 1.113559 1.113552 -13.2874 1.363824 0.7874 14.0748 1.363824 0.7874 -13.2874 1.113559 1.113552 14.0748 1.113559 -1.113556 14.0748 1.113559 -1.113556 -13.2874 1.521147 0.407587 -13.2874 1.521147 0.407587 14.0748 -0.787397 1.363818 -13.2874 -0.407584 1.521141 -14.0748 -0.787397 1.363818 -14.0748 -0.407584 1.521141 -13.2874 -1.363815 0.7874 -13.2874 -1.521138 0.407587 -14.0748 -1.521138 0.407587 -13.2874 -1.363815 0.7874 -14.0748 -1.113549 1.113552 -13.2874 -1.113549 1.113552 -14.0748 -1.574799 -2e-6 -13.2874 -1.521138 -0.407591 -14.0748 -1.521138 -0.407591 -13.2874 -1.574799 -2e-6 -14.0748 -1.363815 -0.787403 -14.0748 -1.363815 -0.787403 -13.2874 5e-6 -1.574805 -13.2874 -0.407584 -1.521145 -14.0748 5e-6 -1.574805 -14.0748 -0.407584 -1.521145 -13.2874 -0.787397 -1.363821 -13.2874 -1.113549 -1.113556 -14.0748 -0.787397 -1.363821 -14.0748 -1.113549 -1.113556 -13.2874 0.407594 -1.521145 -13.2874 0.407594 -1.521145 -14.0748 1.113559 -1.113556 -13.2874 0.787406 -1.363821 -14.0748 1.113559 -1.113556 -14.0748 0.787406 -1.363821 -13.2874 1.363824 -0.787403 -14.0748 1.363824 -0.787403 -13.2874 5e-6 1.574801 -14.0748 5e-6 1.574801 -13.2874 1.521147 -0.407591 -14.0748 1.521147 -0.407591 -13.2874 0.407594 1.521141 -14.0748 0.787406 1.363818 -14.0748 1.113559 1.113552 -14.0748 1.363824 0.7874 -14.0748 1.521147 0.407587 -14.0748 1.574808 -2e-6 -14.0748 1.574808 -2e-6 -13.2874 1.521147 0.407587 -13.2874 1.363824 0.7874 -13.2874 1.113559 1.113552 -13.2874 0.787406 1.363818 -13.2874 0.407594 1.521141 -13.2874 -1.521138 -0.407591 14.0748 -1.521138 0.407587 14.0748 -1.574799 -2e-6 14.0748 -1.363815 -0.787403 14.0748 -1.363815 0.7874 14.0748 -1.113549 -1.113556 14.0748 -1.113549 1.113552 14.0748 -0.787397 -1.363821 14.0748 -0.787397 1.363818 14.0748 -0.407584 -1.521145 14.0748 -0.407584 1.521141 14.0748 5e-6 -1.574805 14.0748 5e-6 1.574801 14.0748 0.407594 -1.521145 14.0748 0.407594 1.521141 14.0748 0.787406 -1.363821 14.0748 0.787406 1.363818 14.0748 1.113559 -1.113556 14.0748 1.113559 1.113552 14.0748 1.363824 -0.787403 14.0748 1.363824 0.7874 14.0748 1.521147 -0.407591 14.0748 1.521147 0.407587 14.0748 1.574808 -2e-6 14.0748</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_009Mesh-mesh-positions-array" count="120" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_009Mesh-mesh-normals">
+          <float_array id="ROUNDLESG_009Mesh-mesh-normals-array" count="420">-0.7070834 0.7070834 0 -0.4999848 0.8660237 0 -0.7070834 0.7070834 0 -0.4999848 0.8660237 0 -0.9659109 -0.2587969 0 -0.8660237 -0.4999848 0 -0.8660237 -0.4999848 0 -0.9659109 -0.2587969 0 -0.9659109 0.2587969 0 -1 0 0 -1 0 0 -0.9659109 0.2587969 0 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.2587969 0.9659109 0 0 1 0 -0.2587969 0.9659109 0 0 1 0 0 -1 0 0 -1 0 -0.7070834 -0.7070834 0 -0.7070834 -0.7070834 0 0.4999848 -0.8660237 0 0.2587969 -0.9659109 0 0.4999848 -0.8660237 0 0.2587969 -0.9659109 0 0.2587969 0.9659109 0 0.4999848 0.8660237 0 0.2587969 0.9659109 0 0.4999848 0.8660237 0 -0.8660237 0.4999848 0 -0.8660237 0.4999848 0 1 0 0 0.9659109 -0.2587969 0 0.9659109 -0.2587969 0 1 0 0 0.8660237 -0.4999848 0 0.8660237 -0.4999848 0 0.7070834 0.7070834 0 0.8660237 0.4999848 0 0.8660237 0.4999848 0 0.7070834 0.7070834 0 0.7070834 -0.7070834 0 0.7070834 -0.7070834 0 0.9659109 0.2587969 0 0.9659109 0.2587969 0 -0.4999848 0.8660237 0 -0.1900082 0.7092196 -0.6788538 -0.3671072 0.6358837 -0.6788538 -0.2587969 0.9659109 0 -0.8660237 0.4999848 0 -0.7092196 0.1900388 -0.6788538 -0.9659109 0.2587969 0 -0.6358532 0.3671072 -0.6788538 -0.7070834 0.7070834 0 -0.5191809 0.5191809 -0.6788538 -1 0 0 -0.7092196 -0.1900082 -0.6788538 -0.9659109 -0.2587969 0 -0.7342448 0 -0.6788538 -0.6358837 -0.3671072 -0.6788538 -0.8660237 -0.4999848 0 0 -0.9999695 0 -0.1900388 -0.7092196 -0.6788538 0 -0.7342448 -0.6788538 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.5191809 -0.5191809 -0.6788538 -0.3671072 -0.6358532 -0.6788538 -0.7070834 -0.7070834 0 0.2587969 -0.9659109 0 0.1900388 -0.7092196 -0.6788538 0.7070834 -0.7070834 0 0.3671072 -0.6358532 -0.6788538 0.5191809 -0.5191809 -0.6788538 0.4999848 -0.8660237 0 0.6358532 -0.3671072 -0.6788538 0.8660237 -0.4999848 0 0 0.7342448 -0.6788538 0 1 0 0.7092196 -0.1900388 -0.6788538 0.9659109 -0.2587969 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0.7342448 0 -0.6788538 1 0 0 0.7092196 0.1900388 -0.6788538 0.9659109 0.2587969 0 0.6358532 0.3671072 -0.6788538 0.8660237 0.4999848 0 0.5191809 0.5191809 -0.6788538 0.7070834 0.7070834 0 0.4999848 0.8660237 0 0.3671072 0.6358532 -0.6788538 0.2587969 0.9659109 0 0.1900082 0.7092196 -0.6788538 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_009Mesh-mesh-normals-array" count="140" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_009Mesh-mesh-map-0">
+          <float_array id="ROUNDLESG_009Mesh-mesh-map-0-array" count="840">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_009Mesh-mesh-map-0-array" count="420" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_009Mesh-mesh-map-1">
+          <float_array id="ROUNDLESG_009Mesh-mesh-map-1-array" count="840">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_009Mesh-mesh-map-1-array" count="420" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ROUNDLESG_009Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#ROUNDLESG_009Mesh-mesh-positions"/>
+        </vertices>
+        <polylist material="dbl_ROUNDLESG_001_ncl1_1-material" count="118">
+          <input semantic="VERTEX" source="#ROUNDLESG_009Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROUNDLESG_009Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_009Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_009Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 1 1 2 2 2 1 1 3 0 0 4 3 3 5 4 4 6 5 5 7 6 6 8 5 5 9 4 4 10 7 7 11 8 8 12 9 9 13 10 10 14 9 9 15 8 8 16 11 11 17 12 12 18 13 13 19 14 14 20 13 13 21 12 12 22 15 15 23 16 16 24 17 17 25 18 18 26 17 17 27 16 16 28 19 19 29 20 20 30 14 14 31 21 21 32 14 14 33 20 20 34 12 12 35 10 10 36 7 7 37 4 4 38 7 7 39 10 10 40 9 9 41 15 15 42 22 22 43 13 13 44 22 22 45 15 15 46 23 23 47 24 24 48 25 25 49 26 26 50 25 25 51 24 24 52 27 27 53 3 3 54 18 18 55 1 1 56 18 18 57 3 3 58 16 16 59 28 28 60 29 29 61 30 30 62 29 29 63 28 28 64 31 31 65 0 0 66 32 32 67 33 33 68 32 32 69 0 0 70 2 2 71 19 19 72 30 30 73 17 17 74 30 30 75 19 19 76 28 28 77 34 34 78 35 35 79 36 36 80 35 35 81 34 34 82 37 37 83 6 6 84 22 22 85 23 23 86 22 22 87 6 6 88 5 5 89 36 36 90 38 38 91 39 39 92 38 38 93 36 36 94 35 35 95 40 40 96 41 41 97 42 42 98 41 41 99 40 40 100 43 43 101 39 39 102 44 44 103 45 45 104 44 44 105 39 39 106 38 38 107 46 46 108 37 37 109 34 34 110 37 37 111 46 46 112 47 47 113 31 31 114 40 40 115 29 29 116 40 40 117 31 31 118 43 43 119 42 42 120 47 47 121 46 46 122 47 47 123 42 42 124 41 41 125 44 44 126 26 26 127 45 45 128 26 26 129 44 44 130 24 24 131 33 33 132 11 11 133 8 8 134 11 11 135 33 33 136 32 32 137 27 27 138 21 21 139 25 25 140 21 21 141 27 27 142 20 20 143 48 48 144 49 49 145 50 50 146 49 49 147 48 48 148 51 51 149 52 52 150 53 53 151 54 54 152 53 53 153 52 52 154 55 55 155 56 56 156 50 50 157 57 57 158 50 50 159 56 56 160 48 48 161 56 56 162 55 55 163 52 52 164 55 55 165 56 56 166 57 57 167 58 58 168 59 59 169 60 60 170 59 59 171 58 58 172 61 61 173 60 60 174 62 62 175 63 63 176 62 62 177 60 60 178 59 59 179 64 64 180 65 65 181 66 66 182 65 65 183 64 64 184 67 67 185 68 68 186 69 69 187 70 70 188 69 69 189 68 68 190 71 71 191 72 72 192 66 66 193 73 73 194 66 66 195 72 72 196 64 64 197 74 74 198 75 75 199 76 76 200 75 75 201 74 74 202 77 77 203 78 78 204 74 74 205 76 76 206 74 74 207 78 78 208 79 79 209 51 51 210 80 80 211 49 49 212 80 80 213 51 51 214 81 81 215 82 82 216 79 79 217 78 78 218 79 79 219 82 82 220 83 83 221 54 54 222 61 61 223 58 58 224 61 61 225 54 54 226 53 53 227 67 67 228 70 70 229 65 65 230 70 70 231 67 67 232 68 68 233 53 84 234 59 84 235 61 84 236 59 85 237 53 85 238 55 85 239 59 86 240 55 86 241 62 86 242 62 87 243 55 87 244 57 87 245 62 88 246 57 88 247 69 88 248 69 89 249 57 89 250 50 89 251 69 90 252 50 90 253 70 90 254 70 91 255 50 91 256 49 91 257 70 92 258 49 92 259 65 92 260 65 93 261 49 93 262 80 93 263 65 94 264 80 94 265 66 94 266 66 95 267 80 95 268 84 95 269 66 96 270 84 96 271 73 96 272 73 97 273 84 97 274 85 97 275 73 98 276 85 98 277 75 98 278 75 99 279 85 99 280 86 99 281 75 100 282 86 100 283 76 100 284 76 101 285 86 101 286 87 101 287 76 102 288 87 102 289 78 102 290 78 103 291 87 103 292 88 103 293 78 104 294 88 104 295 82 104 296 82 105 297 88 105 298 89 105 299 89 106 300 83 83 301 82 82 302 83 83 303 89 106 304 90 107 305 88 108 306 90 107 307 89 106 308 90 107 309 88 108 310 91 109 311 87 110 312 91 109 313 88 108 314 91 109 315 87 110 316 92 111 317 77 77 318 73 73 319 75 75 320 73 73 321 77 77 322 72 72 323 86 112 324 92 111 325 87 110 326 92 111 327 86 112 328 93 113 329 94 114 330 86 112 331 85 115 332 86 112 333 94 114 334 93 113 335 63 63 336 69 69 337 71 71 338 69 69 339 63 63 340 62 62 341 95 116 342 85 115 343 84 117 344 85 115 345 95 116 346 94 114 347 81 81 348 84 117 349 80 80 350 84 117 351 81 81 352 95 116 353</p>
+        </polylist>
+        <polylist material="dbl_ROUNDLESG_002_ncl1_1-material" count="22">
+          <input semantic="VERTEX" source="#ROUNDLESG_009Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROUNDLESG_009Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_009Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_009Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>96 118 354 97 118 355 98 118 356 97 119 357 96 119 358 99 119 359 97 120 360 99 120 361 100 120 362 100 121 363 99 121 364 101 121 365 100 122 366 101 122 367 102 122 368 102 123 369 101 123 370 103 123 371 102 124 372 103 124 373 104 124 374 104 125 375 103 125 376 105 125 377 104 126 378 105 126 379 106 126 380 106 127 381 105 127 382 107 127 383 106 128 384 107 128 385 108 128 386 109 129 387 108 129 388 107 129 389 108 130 390 109 130 391 110 130 392 110 131 393 109 131 394 111 131 395 110 132 396 111 132 397 112 132 398 112 133 399 111 133 400 113 133 401 112 134 402 113 134 403 114 134 404 114 135 405 113 135 406 115 135 407 114 136 408 115 136 409 116 136 410 116 137 411 115 137 412 117 137 413 116 138 414 117 138 415 118 138 416 118 139 417 117 139 418 119 139 419</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Component_6_003Mesh-mesh" name="Component#6_003Mesh">
+      <mesh>
+        <source id="Component_6_003Mesh-mesh-positions">
+          <float_array id="Component_6_003Mesh-mesh-positions-array" count="24">18.70079 0.688973 -7.291252 18.70079 -0.68898 7.291254 18.70079 -0.68898 -7.291252 18.70079 0.688973 7.291254 -18.70079 -0.68898 -7.291252 -18.70079 -0.68898 7.291254 -18.70079 0.688973 7.291254 -18.70079 0.688973 -7.291252</float_array>
+          <technique_common>
+            <accessor source="#Component_6_003Mesh-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_6_003Mesh-mesh-normals">
+          <float_array id="Component_6_003Mesh-mesh-normals-array" count="36">1 0 0 1 0 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 0 -1 0 0 -1 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Component_6_003Mesh-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_6_003Mesh-mesh-map-0">
+          <float_array id="Component_6_003Mesh-mesh-map-0-array" count="72">-107.6168 -8.203382 -108.1812 -8.240837 -107.6168 -8.240837 -108.1812 -8.240837 -107.6168 -8.203382 -108.1812 -8.203382 0.413713 0.385486 -1.033757 -0.0108639 0.413713 -0.0108639 -1.033757 -0.0108639 0.413713 0.385486 -1.033757 0.385486 0.413713 -8.240837 -1.033757 -8.203382 -1.033757 -8.240837 -1.033757 -8.203382 0.413713 -8.240837 0.413713 -8.203382 -190.7629 -0.0108639 -192.2104 0.385486 -192.2104 -0.0108639 -192.2104 0.385486 -190.7629 -0.0108639 -190.7629 0.385486 -192.2104 -8.203382 -190.7629 -8.240837 -190.7629 -8.203382 -190.7629 -8.240837 -192.2104 -8.203382 -192.2104 -8.240837 -83.6155 -8.240837 -84.17984 -8.203382 -84.17984 -8.240837 -84.17984 -8.203382 -83.6155 -8.240837 -83.6155 -8.203382</float_array>
+          <technique_common>
+            <accessor source="#Component_6_003Mesh-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_6_003Mesh-mesh-map-1">
+          <float_array id="Component_6_003Mesh-mesh-map-1-array" count="72">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#Component_6_003Mesh-mesh-map-1-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Component_6_003Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#Component_6_003Mesh-mesh-positions"/>
+        </vertices>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Component_6_003Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Component_6_003Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Component_6_003Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#Component_6_003Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 0 1 2 0 2 1 1 3 0 1 4 3 1 5 1 2 6 4 2 7 2 2 8 4 3 9 1 3 10 5 3 11 1 4 12 6 4 13 5 4 14 6 5 15 1 5 16 3 5 17 7 6 18 3 6 19 0 6 20 3 7 21 7 7 22 6 7 23 0 8 24 4 8 25 7 8 26 4 9 27 0 9 28 2 9 29 5 10 30 7 10 31 4 10 32 7 11 33 5 11 34 6 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Component_5_003Mesh-mesh" name="Component#5_003Mesh">
+      <mesh>
+        <source id="Component_5_003Mesh-mesh-positions">
+          <float_array id="Component_5_003Mesh-mesh-positions-array" count="168">19.48819 -14.71103 0.688977 19.39323 -14.75037 -0.688976 19.48819 -14.71103 -0.688976 19.39323 -14.75037 0.688977 19.56972 14.64847 -0.688976 19.63229 14.56693 0.688977 19.63229 14.56693 -0.688976 19.56972 14.64847 0.688977 19.29134 14.76378 0.688977 19.39323 14.75037 -0.688976 19.29134 14.76378 -0.688976 19.39323 14.75037 0.688977 19.67162 14.47198 0.688977 19.67162 14.47198 -0.688976 -19.67163 -14.47198 0.688977 -19.68504 14.37008 0.688977 -19.68504 -14.37008 0.688977 -19.67163 14.47198 0.688977 -19.6323 -14.56693 0.688977 -19.6323 14.56693 0.688977 -19.56973 -14.64847 0.688977 -19.56973 14.64847 0.688977 -19.48819 -14.71103 0.688977 -19.48819 14.71103 0.688977 -19.39324 -14.75037 0.688977 -19.39324 14.75037 0.688977 -19.29134 -14.76378 0.688977 -19.29134 14.76378 0.688977 19.29134 -14.76378 0.688977 19.48819 14.71103 0.688977 19.56972 -14.64847 0.688977 19.63229 -14.56693 0.688977 19.67162 -14.47198 0.688977 19.68504 -14.37008 0.688977 19.68504 14.37008 0.688977 -19.6323 -14.56693 -0.688976 -19.67163 -14.47198 -0.688976 -19.68504 -14.37008 -0.688976 -19.68504 14.37008 -0.688976 -19.67163 14.47198 -0.688976 -19.29134 14.76378 -0.688976 -19.39324 14.75037 -0.688976 -19.56973 -14.64847 -0.688976 -19.48819 -14.71103 -0.688976 -19.48819 14.71103 -0.688976 -19.6323 14.56693 -0.688976 -19.56973 14.64847 -0.688976 -19.39324 -14.75037 -0.688976 -19.29134 -14.76378 -0.688976 19.68504 14.37008 -0.688976 19.68504 -14.37008 -0.688976 19.67162 -14.47198 -0.688976 19.29134 -14.76378 -0.688976 19.48819 14.71103 -0.688976 19.56972 -14.64847 -0.688976 19.63229 -14.56693 -0.688976</float_array>
+          <technique_common>
+            <accessor source="#Component_5_003Mesh-mesh-positions-array" count="56" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_5_003Mesh-mesh-normals">
+          <float_array id="Component_5_003Mesh-mesh-normals-array" count="348">0.3671377 -0.6358532 0.6788538 0.1900388 -0.7092196 -0.6788538 0.3671377 -0.6358532 -0.6788538 0.1900388 -0.7092196 0.6788538 0.5191809 0.5191809 -0.6788538 0.6358532 0.3671377 0.6788538 0.6358837 0.3671072 -0.6788538 0.5191809 0.5191809 0.6788538 0.04715108 0.7196875 0.6926786 0.1900388 0.7092196 -0.6788538 0.04715108 0.7196875 -0.6926786 0.1900388 0.7092196 0.6788538 0.7092196 0.1900388 0.6788538 0.7092196 0.1900388 -0.6788538 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 -0.7092196 -0.1900082 0.6788538 -0.6358532 -0.3671072 -0.6788538 -0.6358532 -0.3671377 0.6788538 -0.7092196 -0.1900082 -0.6788538 -1 0 0 -1 0 0 -0.7092196 0.1900082 0.6788538 -0.7196875 0.04712057 -0.6926786 -0.7196875 0.04715108 0.6926786 -0.7092196 0.1900082 -0.6788538 -0.1900388 0.7092196 0.6788538 -0.04712057 0.7196875 -0.6926786 -0.1900388 0.7092196 -0.6788538 -0.04715108 0.7196875 0.6926786 -0.3671072 -0.6358532 0.6788843 -0.5191504 -0.5192114 -0.6788538 -0.3671072 -0.6358532 -0.6788843 -0.5191809 -0.5192114 0.6788538 -0.3671072 0.6358532 0.6788843 -0.3671072 0.6358532 -0.6788843 -0.5191504 0.5192114 0.6788538 -0.6358532 0.3671377 -0.6788538 -0.6358532 0.3671072 0.6788538 -0.5191809 0.5192114 -0.6788538 -0.04712057 -0.7196875 0.6926786 -0.1900388 -0.7092196 -0.6788538 -0.04715108 -0.7196875 -0.6926786 -0.1900388 -0.7092196 0.6788538 -0.7196875 -0.04712057 0.6926786 -0.7196875 -0.04715108 -0.6926786 0.7196875 0.04715108 0.6926481 0.7196875 0.04715108 -0.6926481 0.7196875 -0.04715108 -0.6926481 0.7092196 -0.1900388 0.6788538 0.7092196 -0.1900388 -0.6788538 0.7196875 -0.04715108 0.6926481 0.04715108 -0.7196875 -0.6926786 0.04715108 -0.7196875 0.6926786 0.3671377 0.6358532 -0.6788538 0.3671377 0.6358532 0.6788538 1 0 0 1 0 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 -1 0 0 -1 0 0.6358532 -0.3671377 -0.6788538 0.5191809 -0.5191809 0.6788538 0.5191809 -0.5191809 -0.6788538 0.6358837 -0.3671072 0.6788538 0 1 0 0 1 0</float_array>
+          <technique_common>
+            <accessor source="#Component_5_003Mesh-mesh-normals-array" count="116" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_5_003Mesh-mesh-map-0">
+          <float_array id="Component_5_003Mesh-mesh-map-0-array" count="648">8.913616 0.802553 8.909639 0.765101 8.913616 0.765101 8.909639 0.765101 8.913616 0.802553 8.909639 0.802553 -4.827178 0.765101 -4.831155 0.802553 -4.831155 0.765101 -4.831155 0.802553 -4.827178 0.765101 -4.827178 0.802553 -9.333129 0.802553 -9.337107 0.765101 -9.333129 0.765101 -9.337107 0.765101 -9.333129 0.802553 -9.337107 0.802553 -2.495618 0.765101 -2.499596 0.802553 -2.499596 0.765101 -2.499596 0.802553 -2.495618 0.765101 -2.495618 0.802553 -192.0204 0.431058 -192.0199 -0.352863 -192.0199 0.428288 -192.0199 -0.352863 -192.0204 0.431058 -192.0204 -0.355633 -192.0204 -0.355633 -192.0204 0.431058 -192.022 0.433639 -192.0204 -0.355633 -192.022 0.433639 -192.022 -0.358214 -192.022 -0.358214 -192.022 0.433639 -192.0244 0.435855 -192.022 -0.358214 -192.0244 0.435855 -192.0244 -0.36043 -192.0244 -0.36043 -192.0244 0.435855 -192.0276 0.437555 -192.0244 -0.36043 -192.0276 0.437555 -192.0276 -0.36213 -192.0276 -0.36213 -192.0276 0.437555 -192.0312 0.438624 -192.0276 -0.36213 -192.0312 0.438624 -192.0312 -0.363199 -192.0312 -0.363199 -192.0312 0.438624 -192.0352 0.438989 -192.0312 -0.363199 -192.0352 0.438989 -192.0352 -0.363564 -192.0352 -0.363564 -192.0352 0.438989 -193.5283 0.438989 -192.0352 -0.363564 -193.5283 0.438989 -193.5283 -0.363564 -193.5283 -0.363564 -193.5283 0.438989 -193.5323 0.438624 -193.5283 -0.363564 -193.5323 0.438624 -193.5323 -0.363199 -193.5323 -0.363199 -193.5323 0.438624 -193.536 0.437555 -193.5323 -0.363199 -193.536 0.437555 -193.536 -0.36213 -193.536 -0.36213 -193.536 0.437555 -193.5391 0.435855 -193.536 -0.36213 -193.5391 0.435855 -193.5391 -0.36043 -193.5391 -0.36043 -193.5391 0.435855 -193.5415 0.433639 -193.5391 -0.36043 -193.5415 0.433639 -193.5415 -0.358214 -193.5415 -0.358214 -193.5415 0.433639 -193.5431 0.431058 -193.5415 -0.358214 -193.5431 0.431058 -193.5431 -0.355633 -193.5431 -0.355633 -193.5431 0.431058 -193.5436 0.428288 -193.5431 -0.355633 -193.5436 0.428288 -193.5436 -0.352863 2.951803 0.802553 2.955781 0.765101 2.955781 0.802553 2.955781 0.765101 2.951803 0.802553 2.951803 0.765101 -84.66681 -8.203382 -83.55455 -8.240837 -83.55455 -8.203382 -83.55455 -8.240837 -84.66681 -8.203382 -84.66681 -8.240837 -2.312735 0.802553 -2.308757 0.765101 -2.308757 0.802553 -2.308757 0.765101 -2.312735 0.802553 -2.312735 0.765101 -8.183148 0.802553 -8.187125 0.765101 -8.183148 0.765101 -8.187125 0.765101 -8.183148 0.802553 -8.187125 0.802553 6.326101 0.802553 6.322124 0.765101 6.326101 0.765101 6.322124 0.765101 6.326101 0.802553 6.322124 0.802553 4.800608 0.802553 4.804585 0.765101 4.804585 0.802553 4.804585 0.765101 4.800608 0.802553 4.800608 0.765101 -7.955765 0.802553 -7.959743 0.765101 -7.955765 0.765101 -7.959743 0.765101 -7.955765 0.802553 -7.959743 0.802553 -5.93051 0.802553 -5.926532 0.765101 -5.926532 0.802553 -5.926532 0.765101 -5.93051 0.802553 -5.93051 0.765101 8.001882 0.802553 7.997904 0.765101 8.001882 0.765101 7.997904 0.765101 8.001882 0.802553 7.997904 0.802553 0.901702 0.802553 0.90568 0.765101 0.90568 0.802553 0.90568 0.765101 0.901702 0.802553 0.901702 0.765101 -7.186076 0.802553 -7.190053 0.765101 -7.186076 0.765101 -7.190053 0.765101 -7.186076 0.802553 -7.190053 0.802553 -4.266947 0.802553 -4.262969 0.765101 -4.262969 0.802553 -4.262969 0.765101 -4.266947 0.802553 -4.266947 0.765101 7.416639 0.802553 7.412662 0.765101 7.416639 0.765101 7.412662 0.765101 7.416639 0.802553 7.412662 0.802553 0.006149947 0.765101 0.002171993 0.802553 0.002171993 0.765101 0.002171993 0.802553 0.006149947 0.765101 0.006149947 0.802553 1.404883 0.765101 1.400905 0.802553 1.400905 0.765101 1.400905 0.802553 1.404883 0.765101 1.404883 0.802553 9.522351 0.802553 9.518372 0.765101 9.522351 0.765101 9.518372 0.765101 9.522351 0.802553 9.518372 0.802553 -8.366536 0.802553 -8.370512 0.765101 -8.366536 0.765101 -8.370512 0.765101 -8.366536 0.802553 -8.370512 0.802553 -6.829638 0.802553 -6.833616 0.765101 -6.829638 0.765101 -6.833616 0.765101 -6.829638 0.802553 -6.833616 0.802553 -107.1299 -8.240837 -108.2421 -8.203382 -108.2421 -8.240837 -108.2421 -8.203382 -107.1299 -8.240837 -107.1299 -8.203382 0.223776 -0.355633 0.223257 0.428288 0.223257 -0.352863 0.223257 0.428288 0.223776 -0.355633 0.223776 0.431058 0.223776 0.431058 0.223776 -0.355633 0.225298 -0.358214 0.223776 0.431058 0.225298 -0.358214 0.225298 0.433639 0.225298 0.433639 0.225298 -0.358214 0.227719 -0.36043 0.225298 0.433639 0.227719 -0.36043 0.227719 0.435855 0.227719 0.435855 0.227719 -0.36043 0.230875 -0.36213 0.227719 0.435855 0.230875 -0.36213 0.230875 0.437555 0.230875 0.437555 0.230875 -0.36213 0.2345499 -0.363199 0.230875 0.437555 0.2345499 -0.363199 0.2345499 0.438624 0.2345499 0.438624 0.2345499 -0.363199 0.238493 -0.363564 0.2345499 0.438624 0.238493 -0.363564 0.238493 0.438989 0.238493 0.438989 0.238493 -0.363564 1.731673 -0.363564 0.238493 0.438989 1.731673 -0.363564 1.731673 0.438989 1.731673 0.438989 1.731673 -0.363564 1.735616 -0.363199 1.731673 0.438989 1.735616 -0.363199 1.735616 0.438624 1.735616 0.438624 1.735616 -0.363199 1.739291 -0.36213 1.735616 0.438624 1.739291 -0.36213 1.739291 0.437555 1.739291 0.437555 1.739291 -0.36213 1.742447 -0.36043 1.739291 0.437555 1.742447 -0.36043 1.742447 0.435855 1.742447 0.435855 1.742447 -0.36043 1.744868 -0.358214 1.742447 0.435855 1.744868 -0.358214 1.744868 0.433639 1.744868 0.433639 1.744868 -0.358214 1.74639 -0.355633 1.744868 0.433639 1.74639 -0.355633 1.74639 0.431058 1.74639 0.431058 1.74639 -0.355633 1.746909 -0.352863 1.74639 0.431058 1.746909 -0.352863 1.746909 0.428288 1.731673 -8.203382 0.238493 -8.240837 1.731673 -8.240837 0.238493 -8.240837 1.731673 -8.203382 0.238493 -8.203382 5.957079 0.765101 5.953102 0.802553 5.953102 0.765101 5.953102 0.802553 5.957079 0.765101 5.957079 0.802553 3.810762 0.765101 3.806784 0.802553 3.806784 0.765101 3.806784 0.802553 3.810762 0.765101 3.810762 0.802553 7.697567 0.802553 7.69359 0.765101 7.697567 0.765101 7.69359 0.765101 7.697567 0.802553 7.69359 0.802553 -192.0352 -8.203382 -193.5283 -8.240837 -192.0352 -8.240837 -193.5283 -8.240837 -192.0352 -8.203382 -193.5283 -8.203382</float_array>
+          <technique_common>
+            <accessor source="#Component_5_003Mesh-mesh-map-0-array" count="324" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_5_003Mesh-mesh-map-1">
+          <float_array id="Component_5_003Mesh-mesh-map-1-array" count="648">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#Component_5_003Mesh-mesh-map-1-array" count="324" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Component_5_003Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#Component_5_003Mesh-mesh-positions"/>
+        </vertices>
+        <polylist material="Material_003-material" count="108">
+          <input semantic="VERTEX" source="#Component_5_003Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Component_5_003Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Component_5_003Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#Component_5_003Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 1 1 2 2 2 1 1 3 0 0 4 3 3 5 4 4 6 5 5 7 6 6 8 5 5 9 4 4 10 7 7 11 8 8 12 9 9 13 10 10 14 9 9 15 8 8 16 11 11 17 6 6 18 12 12 19 13 13 20 12 12 21 6 6 22 5 5 23 14 14 24 15 14 25 16 14 26 15 15 27 14 15 28 17 15 29 17 16 30 14 16 31 18 16 32 17 17 33 18 17 34 19 17 35 19 18 36 18 18 37 20 18 38 19 19 39 20 19 40 21 19 41 21 20 42 20 20 43 22 20 44 21 21 45 22 21 46 23 21 47 23 22 48 22 22 49 24 22 50 23 23 51 24 23 52 25 23 53 25 24 54 24 24 55 26 24 56 25 25 57 26 25 58 27 25 59 27 26 60 26 26 61 28 26 62 27 27 63 28 27 64 8 27 65 8 28 66 28 28 67 3 28 68 8 29 69 3 29 70 11 29 71 11 30 72 3 30 73 0 30 74 11 31 75 0 31 76 29 31 77 29 32 78 0 32 79 30 32 80 29 33 81 30 33 82 7 33 83 7 34 84 30 34 85 31 34 86 7 35 87 31 35 88 5 35 89 5 36 90 31 36 91 32 36 92 5 37 93 32 37 94 12 37 95 12 38 96 32 38 97 33 38 98 12 39 99 33 39 100 34 39 101 14 40 102 35 41 103 18 42 104 35 41 105 14 40 106 36 43 107 15 44 108 37 44 109 16 44 110 37 45 111 15 45 112 38 45 113 17 46 114 38 47 115 15 48 116 38 47 117 17 46 118 39 49 119 25 50 120 40 51 121 41 52 122 40 51 123 25 50 124 27 53 125 22 54 126 42 55 127 43 56 128 42 55 129 22 54 130 20 57 131 18 42 132 42 55 133 20 57 134 42 55 135 18 42 136 35 41 137 23 58 138 41 52 139 44 59 140 41 52 141 23 58 142 25 50 143 21 60 144 45 61 145 19 62 146 45 61 147 21 60 148 46 63 149 26 64 150 47 65 151 48 66 152 47 65 153 26 64 154 24 67 155 16 68 156 36 43 157 14 40 158 36 43 159 16 68 160 37 69 161 21 60 162 44 59 163 46 63 164 44 59 165 21 60 166 23 58 167 19 62 168 39 49 169 17 46 170 39 49 171 19 62 172 45 61 173 24 67 174 43 56 175 47 65 176 43 56 177 24 67 178 22 54 179 13 13 180 34 70 181 49 71 182 34 70 183 13 13 184 12 12 185 50 72 186 32 73 187 51 74 188 32 73 189 50 72 190 33 75 191 3 3 192 52 76 193 1 1 194 52 76 195 3 3 196 28 77 197 11 11 198 53 78 199 9 9 200 53 78 201 11 11 202 29 79 203 29 79 204 4 4 205 53 78 206 4 4 207 29 79 208 7 7 209 49 80 210 33 80 211 50 80 212 33 81 213 49 81 214 34 81 215 39 82 216 37 82 217 38 82 218 37 83 219 39 83 220 36 83 221 36 84 222 39 84 223 45 84 224 36 85 225 45 85 226 35 85 227 35 86 228 45 86 229 46 86 230 35 87 231 46 87 232 42 87 233 42 88 234 46 88 235 44 88 236 42 89 237 44 89 238 43 89 239 43 90 240 44 90 241 41 90 242 43 91 243 41 91 244 47 91 245 47 92 246 41 92 247 40 92 248 47 93 249 40 93 250 48 93 251 48 94 252 40 94 253 10 94 254 48 95 255 10 95 256 52 95 257 52 96 258 10 96 259 9 96 260 52 97 261 9 97 262 1 97 263 1 98 264 9 98 265 53 98 266 1 99 267 53 99 268 2 99 269 2 100 270 53 100 271 4 100 272 2 101 273 4 101 274 54 101 275 54 102 276 4 102 277 6 102 278 54 103 279 6 103 280 55 103 281 55 104 282 6 104 283 13 104 284 55 105 285 13 105 286 51 105 287 51 106 288 13 106 289 49 106 290 51 107 291 49 107 292 50 107 293 28 108 294 48 108 295 52 108 296 48 109 297 28 109 298 26 109 299 55 110 300 30 111 301 54 112 302 30 111 303 55 110 304 31 113 305 51 74 306 31 113 307 55 110 308 31 113 309 51 74 310 32 73 311 30 111 312 2 2 313 54 112 314 2 2 315 30 111 316 0 0 317 27 114 318 10 114 319 40 114 320 10 115 321 27 115 322 8 115 323</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="Component_6_002Mesh-mesh" name="Component#6_002Mesh">
+      <mesh>
+        <source id="Component_6_002Mesh-mesh-positions">
+          <float_array id="Component_6_002Mesh-mesh-positions-array" count="24">18.70079 0.688976 -7.291252 18.70079 -0.688976 7.291254 18.70079 -0.688976 -7.291252 18.70079 0.688976 7.291254 -18.70079 -0.688976 -7.291252 -18.70079 -0.688976 7.291254 -18.70079 0.688976 7.291254 -18.70079 0.688976 -7.291252</float_array>
+          <technique_common>
+            <accessor source="#Component_6_002Mesh-mesh-positions-array" count="8" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_6_002Mesh-mesh-normals">
+          <float_array id="Component_6_002Mesh-mesh-normals-array" count="36">1 0 0 1 0 0 0 -1 0 0 -1 0 0 0 1 0 0 1 0 1 0 0 1 0 0 0 -1 0 0 -1 -1 0 0 -1 0 0</float_array>
+          <technique_common>
+            <accessor source="#Component_6_002Mesh-mesh-normals-array" count="12" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_6_002Mesh-mesh-map-0">
+          <float_array id="Component_6_002Mesh-mesh-map-0-array" count="72">-107.6168 -8.203382 -108.1812 -8.240837 -107.6168 -8.240837 -108.1812 -8.240837 -107.6168 -8.203382 -108.1812 -8.203382 0.413713 0.385486 -1.033757 -0.0108639 0.413713 -0.0108639 -1.033757 -0.0108639 0.413713 0.385486 -1.033757 0.385486 0.413713 -8.240837 -1.033757 -8.203382 -1.033757 -8.240837 -1.033757 -8.203382 0.413713 -8.240837 0.413713 -8.203382 -190.7629 -0.0108639 -192.2104 0.385486 -192.2104 -0.0108639 -192.2104 0.385486 -190.7629 -0.0108639 -190.7629 0.385486 -192.2104 -8.203382 -190.7629 -8.240837 -190.7629 -8.203382 -190.7629 -8.240837 -192.2104 -8.203382 -192.2104 -8.240837 -83.6155 -8.240837 -84.17984 -8.203382 -84.17984 -8.240837 -84.17984 -8.203382 -83.6155 -8.240837 -83.6155 -8.203382</float_array>
+          <technique_common>
+            <accessor source="#Component_6_002Mesh-mesh-map-0-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="Component_6_002Mesh-mesh-map-1">
+          <float_array id="Component_6_002Mesh-mesh-map-1-array" count="72">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#Component_6_002Mesh-mesh-map-1-array" count="36" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="Component_6_002Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#Component_6_002Mesh-mesh-positions"/>
+        </vertices>
+        <polylist count="12">
+          <input semantic="VERTEX" source="#Component_6_002Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#Component_6_002Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#Component_6_002Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#Component_6_002Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 0 1 2 0 2 1 1 3 0 1 4 3 1 5 1 2 6 4 2 7 2 2 8 4 3 9 1 3 10 5 3 11 1 4 12 6 4 13 5 4 14 6 5 15 1 5 16 3 5 17 7 6 18 3 6 19 0 6 20 3 7 21 7 7 22 6 7 23 0 8 24 4 8 25 7 8 26 4 9 27 0 9 28 2 9 29 5 10 30 7 10 31 4 10 32 7 11 33 5 11 34 6 11 35</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="ROUNDLESG_006Mesh-mesh" name="ROUNDLESG_006Mesh">
+      <mesh>
+        <source id="ROUNDLESG_006Mesh-mesh-positions">
+          <float_array id="ROUNDLESG_006Mesh-mesh-positions-array" count="360">-1.113554 1.11356 14.0748 -0.787401 1.363825 -13.2874 -1.113554 1.11356 -13.2874 -0.787401 1.363825 14.0748 -1.521143 -0.407583 14.0748 -1.363819 -0.787396 -13.2874 -1.363819 -0.787396 14.0748 -1.521143 -0.407583 -13.2874 -1.521143 0.407595 14.0748 -1.574803 6e-6 -13.2874 -1.574803 6e-6 14.0748 -1.521143 0.407595 -13.2874 -0.407589 -1.521137 14.0748 -0.787401 -1.363814 -13.2874 -0.407589 -1.521137 -13.2874 -0.787401 -1.363814 14.0748 -0.407589 1.521149 14.0748 0 1.574809 -13.2874 -0.407589 1.521149 -13.2874 0 1.574809 14.0748 0 -1.574797 14.0748 0 -1.574797 -13.2874 -1.113554 -1.113548 -13.2874 -1.113554 -1.113548 14.0748 0.787402 -1.363814 14.0748 0.407589 -1.521137 -13.2874 0.787402 -1.363814 -13.2874 0.407589 -1.521137 14.0748 0.407589 1.521149 14.0748 0.787402 1.363825 -13.2874 0.407589 1.521149 -13.2874 0.787402 1.363825 14.0748 -1.363819 0.787408 -13.2874 -1.363819 0.787408 14.0748 1.574803 6e-6 -13.2874 1.521143 -0.407583 14.0748 1.521143 -0.407583 -13.2874 1.574803 6e-6 14.0748 1.36382 -0.787396 14.0748 1.36382 -0.787396 -13.2874 1.113554 1.11356 -13.2874 1.36382 0.787408 14.0748 1.36382 0.787408 -13.2874 1.113554 1.11356 14.0748 1.113554 -1.113548 14.0748 1.113554 -1.113548 -13.2874 1.521143 0.407595 -13.2874 1.521143 0.407595 14.0748 -0.787401 1.363825 -13.2874 -0.407589 1.521149 -14.0748 -0.787401 1.363825 -14.0748 -0.407589 1.521149 -13.2874 -1.363819 0.787408 -13.2874 -1.521143 0.407595 -14.0748 -1.521143 0.407595 -13.2874 -1.363819 0.787408 -14.0748 -1.113554 1.11356 -13.2874 -1.113554 1.11356 -14.0748 -1.574803 6e-6 -13.2874 -1.521143 -0.407583 -14.0748 -1.521143 -0.407583 -13.2874 -1.574803 6e-6 -14.0748 -1.363819 -0.787396 -14.0748 -1.363819 -0.787396 -13.2874 0 -1.574797 -13.2874 -0.407589 -1.521137 -14.0748 0 -1.574797 -14.0748 -0.407589 -1.521137 -13.2874 -0.787401 -1.363814 -13.2874 -1.113554 -1.113548 -14.0748 -0.787401 -1.363814 -14.0748 -1.113554 -1.113548 -13.2874 0.407589 -1.521137 -13.2874 0.407589 -1.521137 -14.0748 1.113554 -1.113548 -13.2874 0.787402 -1.363814 -14.0748 1.113554 -1.113548 -14.0748 0.787402 -1.363814 -13.2874 1.36382 -0.787396 -14.0748 1.36382 -0.787396 -13.2874 0 1.574809 -14.0748 0 1.574809 -13.2874 1.521143 -0.407583 -14.0748 1.521143 -0.407583 -13.2874 0.407589 1.521149 -14.0748 0.787402 1.363825 -14.0748 1.113554 1.11356 -14.0748 1.36382 0.787408 -14.0748 1.521143 0.407595 -14.0748 1.574803 6e-6 -14.0748 1.574803 6e-6 -13.2874 1.521143 0.407595 -13.2874 1.36382 0.787408 -13.2874 1.113554 1.11356 -13.2874 0.787402 1.363825 -13.2874 0.407589 1.521149 -13.2874 -1.521143 -0.407583 14.0748 -1.521143 0.407595 14.0748 -1.574803 6e-6 14.0748 -1.363819 -0.787396 14.0748 -1.363819 0.787408 14.0748 -1.113554 -1.113548 14.0748 -1.113554 1.11356 14.0748 -0.787401 -1.363814 14.0748 -0.787401 1.363825 14.0748 -0.407589 -1.521137 14.0748 -0.407589 1.521149 14.0748 0 -1.574797 14.0748 0 1.574809 14.0748 0.407589 -1.521137 14.0748 0.407589 1.521149 14.0748 0.787402 -1.363814 14.0748 0.787402 1.363825 14.0748 1.113554 -1.113548 14.0748 1.113554 1.11356 14.0748 1.36382 -0.787396 14.0748 1.36382 0.787408 14.0748 1.521143 -0.407583 14.0748 1.521143 0.407595 14.0748 1.574803 6e-6 14.0748</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_006Mesh-mesh-positions-array" count="120" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_006Mesh-mesh-normals">
+          <float_array id="ROUNDLESG_006Mesh-mesh-normals-array" count="420">-0.7070834 0.7070834 0 -0.4999848 0.8660237 0 -0.7070834 0.7070834 0 -0.4999848 0.8660237 0 -0.9659109 -0.2587969 0 -0.8660237 -0.4999848 0 -0.8660237 -0.4999848 0 -0.9659109 -0.2587969 0 -0.9659109 0.2587969 0 -1 0 0 -1 0 0 -0.9659109 0.2587969 0 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.2587969 0.9659109 0 0 1 0 -0.2587969 0.9659109 0 0 1 0 0 -1 0 0 -1 0 -0.7070834 -0.7070834 0 -0.7070834 -0.7070834 0 0.4999848 -0.8660237 0 0.2587969 -0.9659109 0 0.4999848 -0.8660237 0 0.2587969 -0.9659109 0 0.2587969 0.9659109 0 0.4999848 0.8660237 0 0.2587969 0.9659109 0 0.4999848 0.8660237 0 -0.8660237 0.4999848 0 -0.8660237 0.4999848 0 1 0 0 0.9659109 -0.2587969 0 0.9659109 -0.2587969 0 1 0 0 0.8660237 -0.4999848 0 0.8660237 -0.4999848 0 0.7070834 0.7070834 0 0.8660237 0.4999848 0 0.8660237 0.4999848 0 0.7070834 0.7070834 0 0.7070834 -0.7070834 0 0.7070834 -0.7070834 0 0.9659109 0.2587969 0 0.9659109 0.2587969 0 -0.4999848 0.8660237 0 -0.1900388 0.7092196 -0.6788538 -0.3671072 0.6358532 -0.6788538 -0.2587969 0.9659109 0 -0.8660237 0.4999848 0 -0.7092196 0.1900388 -0.6788538 -0.9659109 0.2587969 0 -0.6358532 0.3671072 -0.6788538 -0.7070834 0.7070834 0 -0.5191809 0.5191809 -0.6788538 -1 0 0 -0.7092196 -0.1900082 -0.6788538 -0.9659109 -0.2587969 0 -0.7342448 0 -0.6788538 -0.6358532 -0.3671072 -0.6788538 -0.8660237 -0.4999848 0 0 -1 0 -0.1900388 -0.7092196 -0.6788538 0 -0.7342448 -0.6788538 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.5191809 -0.5191809 -0.6788538 -0.3671072 -0.6358837 -0.6788538 -0.7070834 -0.7070834 0 0.2587969 -0.9659109 0 0.1900388 -0.7092196 -0.6788538 0.7070834 -0.7070834 0 0.3671072 -0.6358532 -0.6788538 0.5191809 -0.5191809 -0.6788538 0.4999848 -0.8660237 0 0.6358532 -0.3671072 -0.6788538 0.8660237 -0.4999848 0 0 0.7342448 -0.6788538 0 1 0 0.7092196 -0.1900388 -0.6788538 0.9659109 -0.2587969 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0.7342448 0 -0.6788538 1 0 0 0.7092196 0.1900082 -0.6788538 0.9659109 0.2587969 0 0.6358532 0.3671072 -0.6788538 0.8660237 0.4999848 0 0.5191809 0.5191809 -0.6788538 0.7070834 0.7070834 0 0.4999848 0.8660237 0 0.3671072 0.6358532 -0.6788538 0.2587969 0.9659109 0 0.1900082 0.7092196 -0.6788538 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_006Mesh-mesh-normals-array" count="140" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_006Mesh-mesh-map-0">
+          <float_array id="ROUNDLESG_006Mesh-mesh-map-0-array" count="840">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_006Mesh-mesh-map-0-array" count="420" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_006Mesh-mesh-map-1">
+          <float_array id="ROUNDLESG_006Mesh-mesh-map-1-array" count="840">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_006Mesh-mesh-map-1-array" count="420" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ROUNDLESG_006Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#ROUNDLESG_006Mesh-mesh-positions"/>
+        </vertices>
+        <polylist material="dbl_ROUNDLESG_001_ncl1_4-material" count="118">
+          <input semantic="VERTEX" source="#ROUNDLESG_006Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROUNDLESG_006Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_006Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_006Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 1 1 2 2 2 1 1 3 0 0 4 3 3 5 4 4 6 5 5 7 6 6 8 5 5 9 4 4 10 7 7 11 8 8 12 9 9 13 10 10 14 9 9 15 8 8 16 11 11 17 12 12 18 13 13 19 14 14 20 13 13 21 12 12 22 15 15 23 16 16 24 17 17 25 18 18 26 17 17 27 16 16 28 19 19 29 20 20 30 14 14 31 21 21 32 14 14 33 20 20 34 12 12 35 10 10 36 7 7 37 4 4 38 7 7 39 10 10 40 9 9 41 15 15 42 22 22 43 13 13 44 22 22 45 15 15 46 23 23 47 24 24 48 25 25 49 26 26 50 25 25 51 24 24 52 27 27 53 3 3 54 18 18 55 1 1 56 18 18 57 3 3 58 16 16 59 28 28 60 29 29 61 30 30 62 29 29 63 28 28 64 31 31 65 0 0 66 32 32 67 33 33 68 32 32 69 0 0 70 2 2 71 19 19 72 30 30 73 17 17 74 30 30 75 19 19 76 28 28 77 34 34 78 35 35 79 36 36 80 35 35 81 34 34 82 37 37 83 6 6 84 22 22 85 23 23 86 22 22 87 6 6 88 5 5 89 36 36 90 38 38 91 39 39 92 38 38 93 36 36 94 35 35 95 40 40 96 41 41 97 42 42 98 41 41 99 40 40 100 43 43 101 39 39 102 44 44 103 45 45 104 44 44 105 39 39 106 38 38 107 46 46 108 37 37 109 34 34 110 37 37 111 46 46 112 47 47 113 31 31 114 40 40 115 29 29 116 40 40 117 31 31 118 43 43 119 42 42 120 47 47 121 46 46 122 47 47 123 42 42 124 41 41 125 44 44 126 26 26 127 45 45 128 26 26 129 44 44 130 24 24 131 33 33 132 11 11 133 8 8 134 11 11 135 33 33 136 32 32 137 27 27 138 21 21 139 25 25 140 21 21 141 27 27 142 20 20 143 48 48 144 49 49 145 50 50 146 49 49 147 48 48 148 51 51 149 52 52 150 53 53 151 54 54 152 53 53 153 52 52 154 55 55 155 56 56 156 50 50 157 57 57 158 50 50 159 56 56 160 48 48 161 56 56 162 55 55 163 52 52 164 55 55 165 56 56 166 57 57 167 58 58 168 59 59 169 60 60 170 59 59 171 58 58 172 61 61 173 60 60 174 62 62 175 63 63 176 62 62 177 60 60 178 59 59 179 64 64 180 65 65 181 66 66 182 65 65 183 64 64 184 67 67 185 68 68 186 69 69 187 70 70 188 69 69 189 68 68 190 71 71 191 72 72 192 66 66 193 73 73 194 66 66 195 72 72 196 64 64 197 74 74 198 75 75 199 76 76 200 75 75 201 74 74 202 77 77 203 78 78 204 74 74 205 76 76 206 74 74 207 78 78 208 79 79 209 51 51 210 80 80 211 49 49 212 80 80 213 51 51 214 81 81 215 82 82 216 79 79 217 78 78 218 79 79 219 82 82 220 83 83 221 54 54 222 61 61 223 58 58 224 61 61 225 54 54 226 53 53 227 67 67 228 70 70 229 65 65 230 70 70 231 67 67 232 68 68 233 53 84 234 59 84 235 61 84 236 59 85 237 53 85 238 55 85 239 59 86 240 55 86 241 62 86 242 62 87 243 55 87 244 57 87 245 62 88 246 57 88 247 69 88 248 69 89 249 57 89 250 50 89 251 69 90 252 50 90 253 70 90 254 70 91 255 50 91 256 49 91 257 70 92 258 49 92 259 65 92 260 65 93 261 49 93 262 80 93 263 65 94 264 80 94 265 66 94 266 66 95 267 80 95 268 84 95 269 66 96 270 84 96 271 73 96 272 73 97 273 84 97 274 85 97 275 73 98 276 85 98 277 75 98 278 75 99 279 85 99 280 86 99 281 75 100 282 86 100 283 76 100 284 76 101 285 86 101 286 87 101 287 76 102 288 87 102 289 78 102 290 78 103 291 87 103 292 88 103 293 78 104 294 88 104 295 82 104 296 82 105 297 88 105 298 89 105 299 89 106 300 83 83 301 82 82 302 83 83 303 89 106 304 90 107 305 88 108 306 90 107 307 89 106 308 90 107 309 88 108 310 91 109 311 87 110 312 91 109 313 88 108 314 91 109 315 87 110 316 92 111 317 77 77 318 73 73 319 75 75 320 73 73 321 77 77 322 72 72 323 86 112 324 92 111 325 87 110 326 92 111 327 86 112 328 93 113 329 94 114 330 86 112 331 85 115 332 86 112 333 94 114 334 93 113 335 63 63 336 69 69 337 71 71 338 69 69 339 63 63 340 62 62 341 95 116 342 85 115 343 84 117 344 85 115 345 95 116 346 94 114 347 81 81 348 84 117 349 80 80 350 84 117 351 81 81 352 95 116 353</p>
+        </polylist>
+        <polylist material="dbl_ROUNDLESG_002_ncl1_4-material" count="22">
+          <input semantic="VERTEX" source="#ROUNDLESG_006Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROUNDLESG_006Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_006Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_006Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>96 118 354 97 118 355 98 118 356 97 119 357 96 119 358 99 119 359 97 120 360 99 120 361 100 120 362 100 121 363 99 121 364 101 121 365 100 122 366 101 122 367 102 122 368 102 123 369 101 123 370 103 123 371 102 124 372 103 124 373 104 124 374 104 125 375 103 125 376 105 125 377 104 126 378 105 126 379 106 126 380 106 127 381 105 127 382 107 127 383 106 128 384 107 128 385 108 128 386 109 129 387 108 129 388 107 129 389 108 130 390 109 130 391 110 130 392 110 131 393 109 131 394 111 131 395 110 132 396 111 132 397 112 132 398 112 133 399 111 133 400 113 133 401 112 134 402 113 134 403 114 134 404 114 135 405 113 135 406 115 135 407 114 136 408 115 136 409 116 136 410 116 137 411 115 137 412 117 137 413 116 138 414 117 138 415 118 138 416 118 139 417 117 139 418 119 139 419</p>
+        </polylist>
+      </mesh>
+    </geometry>
+    <geometry id="ROUNDLESG_005Mesh-mesh" name="ROUNDLESG_005Mesh">
+      <mesh>
+        <source id="ROUNDLESG_005Mesh-mesh-positions">
+          <float_array id="ROUNDLESG_005Mesh-mesh-positions-array" count="360">-1.113554 1.113551 14.0748 -0.787402 1.363816 -13.2874 -1.113554 1.113551 -13.2874 -0.787402 1.363816 14.0748 -1.521143 -0.407592 14.0748 -1.36382 -0.787405 -13.2874 -1.36382 -0.787405 14.0748 -1.521143 -0.407592 -13.2874 -1.521143 0.407586 14.0748 -1.574803 -3e-6 -13.2874 -1.574803 -3e-6 14.0748 -1.521143 0.407586 -13.2874 -0.407589 -1.521146 14.0748 -0.787402 -1.363823 -13.2874 -0.407589 -1.521146 -13.2874 -0.787402 -1.363823 14.0748 -0.407589 1.52114 14.0748 0 1.5748 -13.2874 -0.407589 1.52114 -13.2874 0 1.5748 14.0748 0 -1.574806 14.0748 0 -1.574806 -13.2874 -1.113554 -1.113557 -13.2874 -1.113554 -1.113557 14.0748 0.787401 -1.363823 14.0748 0.407589 -1.521146 -13.2874 0.787401 -1.363823 -13.2874 0.407589 -1.521146 14.0748 0.407589 1.52114 14.0748 0.787401 1.363816 -13.2874 0.407589 1.52114 -13.2874 0.787401 1.363816 14.0748 -1.36382 0.787399 -13.2874 -1.36382 0.787399 14.0748 1.574803 -3e-6 -13.2874 1.521143 -0.407592 14.0748 1.521143 -0.407592 -13.2874 1.574803 -3e-6 14.0748 1.363819 -0.787405 14.0748 1.363819 -0.787405 -13.2874 1.113554 1.113551 -13.2874 1.363819 0.787399 14.0748 1.363819 0.787399 -13.2874 1.113554 1.113551 14.0748 1.113554 -1.113557 14.0748 1.113554 -1.113557 -13.2874 1.521143 0.407586 -13.2874 1.521143 0.407586 14.0748 -0.787402 1.363816 -13.2874 -0.407589 1.52114 -14.0748 -0.787402 1.363816 -14.0748 -0.407589 1.52114 -13.2874 -1.36382 0.787399 -13.2874 -1.521143 0.407586 -14.0748 -1.521143 0.407586 -13.2874 -1.36382 0.787399 -14.0748 -1.113554 1.113551 -13.2874 -1.113554 1.113551 -14.0748 -1.574803 -3e-6 -13.2874 -1.521143 -0.407592 -14.0748 -1.521143 -0.407592 -13.2874 -1.574803 -3e-6 -14.0748 -1.36382 -0.787405 -14.0748 -1.36382 -0.787405 -13.2874 0 -1.574806 -13.2874 -0.407589 -1.521146 -14.0748 0 -1.574806 -14.0748 -0.407589 -1.521146 -13.2874 -0.787402 -1.363823 -13.2874 -1.113554 -1.113557 -14.0748 -0.787402 -1.363823 -14.0748 -1.113554 -1.113557 -13.2874 0.407589 -1.521146 -13.2874 0.407589 -1.521146 -14.0748 1.113554 -1.113557 -13.2874 0.787401 -1.363823 -14.0748 1.113554 -1.113557 -14.0748 0.787401 -1.363823 -13.2874 1.363819 -0.787405 -14.0748 1.363819 -0.787405 -13.2874 0 1.5748 -14.0748 0 1.5748 -13.2874 1.521143 -0.407592 -14.0748 1.521143 -0.407592 -13.2874 0.407589 1.52114 -14.0748 0.787401 1.363816 -14.0748 1.113554 1.113551 -14.0748 1.363819 0.787399 -14.0748 1.521143 0.407586 -14.0748 1.574803 -3e-6 -14.0748 1.574803 -3e-6 -13.2874 1.521143 0.407586 -13.2874 1.363819 0.787399 -13.2874 1.113554 1.113551 -13.2874 0.787401 1.363816 -13.2874 0.407589 1.52114 -13.2874 -1.521143 -0.407592 14.0748 -1.521143 0.407586 14.0748 -1.574803 -3e-6 14.0748 -1.36382 -0.787405 14.0748 -1.36382 0.787399 14.0748 -1.113554 -1.113557 14.0748 -1.113554 1.113551 14.0748 -0.787402 -1.363823 14.0748 -0.787402 1.363816 14.0748 -0.407589 -1.521146 14.0748 -0.407589 1.52114 14.0748 0 -1.574806 14.0748 0 1.5748 14.0748 0.407589 -1.521146 14.0748 0.407589 1.52114 14.0748 0.787401 -1.363823 14.0748 0.787401 1.363816 14.0748 1.113554 -1.113557 14.0748 1.113554 1.113551 14.0748 1.363819 -0.787405 14.0748 1.363819 0.787399 14.0748 1.521143 -0.407592 14.0748 1.521143 0.407586 14.0748 1.574803 -3e-6 14.0748</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_005Mesh-mesh-positions-array" count="120" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_005Mesh-mesh-normals">
+          <float_array id="ROUNDLESG_005Mesh-mesh-normals-array" count="420">-0.7070834 0.7070834 0 -0.4999848 0.8660237 0 -0.7070834 0.7070834 0 -0.4999848 0.8660237 0 -0.9659109 -0.2587969 0 -0.8660237 -0.4999848 0 -0.8660237 -0.4999848 0 -0.9659109 -0.2587969 0 -0.9659109 0.2587969 0 -1 0 0 -1 0 0 -0.9659109 0.2587969 0 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.2587969 0.9659109 0 0 1 0 -0.2587969 0.9659109 0 0 1 0 0 -1 0 0 -1 0 -0.7070834 -0.7070834 0 -0.7070834 -0.7070834 0 0.4999848 -0.8660237 0 0.2587969 -0.9659109 0 0.4999848 -0.8660237 0 0.2587969 -0.9659109 0 0.2587969 0.9659109 0 0.4999848 0.8660237 0 0.2587969 0.9659109 0 0.4999848 0.8660237 0 -0.8660237 0.4999848 0 -0.8660237 0.4999848 0 1 0 0 0.9659109 -0.2587969 0 0.9659109 -0.2587969 0 1 0 0 0.8660237 -0.4999848 0 0.8660237 -0.4999848 0 0.7070834 0.7070834 0 0.8660237 0.4999848 0 0.8660237 0.4999848 0 0.7070834 0.7070834 0 0.7070834 -0.7070834 0 0.7070834 -0.7070834 0 0.9659109 0.2587969 0 0.9659109 0.2587969 0 -0.4999848 0.8660237 0 -0.1900388 0.7092196 -0.6788538 -0.3671072 0.6358532 -0.6788538 -0.2587969 0.9659109 0 -0.8660237 0.4999848 0 -0.7092196 0.1900388 -0.6788538 -0.9659109 0.2587969 0 -0.6358532 0.3671072 -0.6788538 -0.7070834 0.7070834 0 -0.5191809 0.5191809 -0.6788538 -1 0 0 -0.7092196 -0.1900082 -0.6788538 -0.9659109 -0.2587969 0 -0.7342448 0 -0.6788538 -0.6358532 -0.3671072 -0.6788538 -0.8660237 -0.4999848 0 0 -1 0 -0.1900082 -0.7092196 -0.6788538 0 -0.7342448 -0.6788538 -0.2587969 -0.9659109 0 -0.4999848 -0.8660237 0 -0.5191809 -0.5191809 -0.6788538 -0.3671072 -0.6358837 -0.6788538 -0.7070834 -0.7070834 0 0.2587969 -0.9659109 0 0.1900082 -0.7092196 -0.6788538 0.7070834 -0.7070834 0 0.3671072 -0.6358837 -0.6788538 0.5191809 -0.5191809 -0.6788538 0.4999848 -0.8660237 0 0.6358532 -0.3671072 -0.6788538 0.8660237 -0.4999848 0 0 0.7342448 -0.6788538 0 1 0 0.7092196 -0.1900388 -0.6788538 0.9659109 -0.2587969 0 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0 0 -1 0.7342448 0 -0.6788538 1 0 0 0.7092196 0.1900082 -0.6788538 0.9659109 0.2587969 0 0.6358837 0.3671072 -0.6788538 0.8660237 0.4999848 0 0.5191809 0.5191809 -0.6788538 0.7070834 0.7070834 0 0.4999848 0.8660237 0 0.3671072 0.6358532 -0.6788538 0.2587969 0.9659109 0 0.1900388 0.7092196 -0.6788538 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1 0 0 1</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_005Mesh-mesh-normals-array" count="140" stride="3">
+              <param name="X" type="float"/>
+              <param name="Y" type="float"/>
+              <param name="Z" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_005Mesh-mesh-map-0">
+          <float_array id="ROUNDLESG_005Mesh-mesh-map-0-array" count="840">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_005Mesh-mesh-map-0-array" count="420" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="ROUNDLESG_005Mesh-mesh-map-1">
+          <float_array id="ROUNDLESG_005Mesh-mesh-map-1-array" count="840">0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0</float_array>
+          <technique_common>
+            <accessor source="#ROUNDLESG_005Mesh-mesh-map-1-array" count="420" stride="2">
+              <param name="S" type="float"/>
+              <param name="T" type="float"/>
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="ROUNDLESG_005Mesh-mesh-vertices">
+          <input semantic="POSITION" source="#ROUNDLESG_005Mesh-mesh-positions"/>
+        </vertices>
+        <polylist material="dbl_ROUNDLESG_001_ncl1_5-material" count="118">
+          <input semantic="VERTEX" source="#ROUNDLESG_005Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROUNDLESG_005Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_005Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_005Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>0 0 0 1 1 1 2 2 2 1 1 3 0 0 4 3 3 5 4 4 6 5 5 7 6 6 8 5 5 9 4 4 10 7 7 11 8 8 12 9 9 13 10 10 14 9 9 15 8 8 16 11 11 17 12 12 18 13 13 19 14 14 20 13 13 21 12 12 22 15 15 23 16 16 24 17 17 25 18 18 26 17 17 27 16 16 28 19 19 29 20 20 30 14 14 31 21 21 32 14 14 33 20 20 34 12 12 35 10 10 36 7 7 37 4 4 38 7 7 39 10 10 40 9 9 41 15 15 42 22 22 43 13 13 44 22 22 45 15 15 46 23 23 47 24 24 48 25 25 49 26 26 50 25 25 51 24 24 52 27 27 53 3 3 54 18 18 55 1 1 56 18 18 57 3 3 58 16 16 59 28 28 60 29 29 61 30 30 62 29 29 63 28 28 64 31 31 65 0 0 66 32 32 67 33 33 68 32 32 69 0 0 70 2 2 71 19 19 72 30 30 73 17 17 74 30 30 75 19 19 76 28 28 77 34 34 78 35 35 79 36 36 80 35 35 81 34 34 82 37 37 83 6 6 84 22 22 85 23 23 86 22 22 87 6 6 88 5 5 89 36 36 90 38 38 91 39 39 92 38 38 93 36 36 94 35 35 95 40 40 96 41 41 97 42 42 98 41 41 99 40 40 100 43 43 101 39 39 102 44 44 103 45 45 104 44 44 105 39 39 106 38 38 107 46 46 108 37 37 109 34 34 110 37 37 111 46 46 112 47 47 113 31 31 114 40 40 115 29 29 116 40 40 117 31 31 118 43 43 119 42 42 120 47 47 121 46 46 122 47 47 123 42 42 124 41 41 125 44 44 126 26 26 127 45 45 128 26 26 129 44 44 130 24 24 131 33 33 132 11 11 133 8 8 134 11 11 135 33 33 136 32 32 137 27 27 138 21 21 139 25 25 140 21 21 141 27 27 142 20 20 143 48 48 144 49 49 145 50 50 146 49 49 147 48 48 148 51 51 149 52 52 150 53 53 151 54 54 152 53 53 153 52 52 154 55 55 155 56 56 156 50 50 157 57 57 158 50 50 159 56 56 160 48 48 161 56 56 162 55 55 163 52 52 164 55 55 165 56 56 166 57 57 167 58 58 168 59 59 169 60 60 170 59 59 171 58 58 172 61 61 173 60 60 174 62 62 175 63 63 176 62 62 177 60 60 178 59 59 179 64 64 180 65 65 181 66 66 182 65 65 183 64 64 184 67 67 185 68 68 186 69 69 187 70 70 188 69 69 189 68 68 190 71 71 191 72 72 192 66 66 193 73 73 194 66 66 195 72 72 196 64 64 197 74 74 198 75 75 199 76 76 200 75 75 201 74 74 202 77 77 203 78 78 204 74 74 205 76 76 206 74 74 207 78 78 208 79 79 209 51 51 210 80 80 211 49 49 212 80 80 213 51 51 214 81 81 215 82 82 216 79 79 217 78 78 218 79 79 219 82 82 220 83 83 221 54 54 222 61 61 223 58 58 224 61 61 225 54 54 226 53 53 227 67 67 228 70 70 229 65 65 230 70 70 231 67 67 232 68 68 233 53 84 234 59 84 235 61 84 236 59 85 237 53 85 238 55 85 239 59 86 240 55 86 241 62 86 242 62 87 243 55 87 244 57 87 245 62 88 246 57 88 247 69 88 248 69 89 249 57 89 250 50 89 251 69 90 252 50 90 253 70 90 254 70 91 255 50 91 256 49 91 257 70 92 258 49 92 259 65 92 260 65 93 261 49 93 262 80 93 263 65 94 264 80 94 265 66 94 266 66 95 267 80 95 268 84 95 269 66 96 270 84 96 271 73 96 272 73 97 273 84 97 274 85 97 275 73 98 276 85 98 277 75 98 278 75 99 279 85 99 280 86 99 281 75 100 282 86 100 283 76 100 284 76 101 285 86 101 286 87 101 287 76 102 288 87 102 289 78 102 290 78 103 291 87 103 292 88 103 293 78 104 294 88 104 295 82 104 296 82 105 297 88 105 298 89 105 299 89 106 300 83 83 301 82 82 302 83 83 303 89 106 304 90 107 305 88 108 306 90 107 307 89 106 308 90 107 309 88 108 310 91 109 311 87 110 312 91 109 313 88 108 314 91 109 315 87 110 316 92 111 317 77 77 318 73 73 319 75 75 320 73 73 321 77 77 322 72 72 323 86 112 324 92 111 325 87 110 326 92 111 327 86 112 328 93 113 329 94 114 330 86 112 331 85 115 332 86 112 333 94 114 334 93 113 335 63 63 336 69 69 337 71 71 338 69 69 339 63 63 340 62 62 341 95 116 342 85 115 343 84 117 344 85 115 345 95 116 346 94 114 347 81 81 348 84 117 349 80 80 350 84 117 351 81 81 352 95 116 353</p>
+        </polylist>
+        <polylist material="dbl_ROUNDLESG_002_ncl1_5-material" count="22">
+          <input semantic="VERTEX" source="#ROUNDLESG_005Mesh-mesh-vertices" offset="0"/>
+          <input semantic="NORMAL" source="#ROUNDLESG_005Mesh-mesh-normals" offset="1"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_005Mesh-mesh-map-0" offset="2" set="0"/>
+          <input semantic="TEXCOORD" source="#ROUNDLESG_005Mesh-mesh-map-1" offset="2" set="1"/>
+          <vcount>3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 3 </vcount>
+          <p>96 118 354 97 118 355 98 118 356 97 119 357 96 119 358 99 119 359 97 120 360 99 120 361 100 120 362 100 121 363 99 121 364 101 121 365 100 122 366 101 122 367 102 122 368 102 123 369 101 123 370 103 123 371 102 124 372 103 124 373 104 124 374 104 125 375 103 125 376 105 125 377 104 126 378 105 126 379 106 126 380 106 127 381 105 127 382 107 127 383 106 128 384 107 128 385 108 128 386 109 129 387 108 129 388 107 129 389 108 130 390 109 130 391 110 130 392 110 131 393 109 131 394 111 131 395 110 132 396 111 132 397 112 132 398 112 133 399 111 133 400 113 133 401 112 134 402 113 134 403 114 134 404 114 135 405 113 135 406 115 135 407 114 136 408 115 136 409 116 136 410 116 137 411 115 137 412 117 137 413 116 138 414 117 138 415 118 138 416 118 139 417 117 139 418 119 139 419</p>
+        </polylist>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_controllers/>
+  <library_visual_scenes>
+    <visual_scene id="Scene" name="Scene">
+      <node id="Camera" name="Camera" type="NODE">
+        <matrix sid="transform">0.6858805 -0.3173701 0.6548619 7.481132 0.7276338 0.3124686 -0.6106656 -6.50764 -0.01081678 0.8953432 0.4452454 5.343665 0 0 0 1</matrix>
+        <instance_camera url="#Camera-camera"/>
+      </node>
+      <node id="Lamp" name="Lamp" type="NODE">
+        <matrix sid="transform">-0.2908646 -0.7711008 0.5663932 4.076245 0.9551712 -0.1998834 0.2183912 1.005454 -0.05518906 0.6045247 0.7946723 5.903862 0 0 0 1</matrix>
+        <instance_light url="#Lamp-light"/>
+      </node>
+      <node id="Camera_001" name="Camera_001" type="NODE">
+        <matrix sid="transform">0.6858805 -0.3173701 0.6548619 8.893543 0.7276337 0.3124686 -0.6106656 -7.920052 -0.01081678 0.8953431 0.4452454 4.170646 0 0 0 1</matrix>
+        <instance_camera url="#Camera_001-camera"/>
+      </node>
+      <node id="ROUNDLESG_010" name="ROUNDLESG_010" type="NODE">
+        <matrix sid="transform">-0.0254 -2.80586e-8 0 1.07725 2.80586e-8 -0.0254 -1.11027e-9 0.9569823 1.16838e-15 -1.11027e-9 0.0254 0.364573 0 0 0 1</matrix>
+        <instance_geometry url="#ROUNDLESG_010Mesh-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="dbl_ROUNDLESG_001-material" target="#dbl_ROUNDLESG_001-material">
+                <bind_vertex_input semantic="ROUNDLESG_010Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ROUNDLESG_010Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="dbl_ROUNDLESG_002-material" target="#dbl_ROUNDLESG_002-material">
+                <bind_vertex_input semantic="ROUNDLESG_010Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ROUNDLESG_010Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="ROUNDLESG_009" name="ROUNDLESG_009" type="NODE">
+        <matrix sid="transform">-0.0254 0 0 1.07725 0 0.0254 2.20028e-8 -0.9430177 0 -2.20028e-8 0.0254 0.3645729 0 0 0 1</matrix>
+        <instance_geometry url="#ROUNDLESG_009Mesh-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="dbl_ROUNDLESG_001_ncl1_1-material" target="#dbl_ROUNDLESG_001_ncl1_1-material">
+                <bind_vertex_input semantic="ROUNDLESG_009Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ROUNDLESG_009Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="dbl_ROUNDLESG_002_ncl1_1-material" target="#dbl_ROUNDLESG_002_ncl1_1-material">
+                <bind_vertex_input semantic="ROUNDLESG_009Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ROUNDLESG_009Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Component_6_003" name="Component_6_003" type="NODE">
+        <matrix sid="transform">1.11027e-9 -0.0254 -2.80586e-8 0.8494381 -0.0254 -1.11027e-9 -1.11027e-9 0.006982088 -1.11027e-9 -2.80586e-8 0.0254 0.5368754 0 0 0 1</matrix>
+        <instance_geometry url="#Component_6_003Mesh-mesh"/>
+      </node>
+      <node id="Component_5_003" name="Component_5_003" type="NODE">
+        <matrix sid="transform">-2.22054e-9 0.09482668 2.80586e-8 0.01022792 0.0508 4.145e-9 1.11026e-9 0.006982088 2.22052e-9 1.04752e-7 -0.0254 0.7395732 0 0 0 1</matrix>
+        <instance_geometry url="#Component_5_003Mesh-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="Material_003-material" target="#Material_003-material">
+                <bind_vertex_input semantic="Component_5_003Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="Component_5_003Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="Component_6_002" name="Component_6_002" type="NODE">
+        <matrix sid="transform">-1.11027e-9 0.0254 0 -0.8271847 -0.0254 -1.11027e-9 -1.11027e-9 0.006982088 -1.11027e-9 0 0.0254 0.5368754 0 0 0 1</matrix>
+        <instance_geometry url="#Component_6_002Mesh-mesh"/>
+      </node>
+      <node id="ROUNDLESG_006" name="ROUNDLESG_006" type="NODE">
+        <matrix sid="transform">0.0254 -2.54e-8 -3.83532e-9 -1.054998 -2.54e-8 -0.0254 -2.65103e-8 0.9569823 3.83529e-9 -2.65103e-8 0.0254 0.364573 0 0 0 1</matrix>
+        <instance_geometry url="#ROUNDLESG_006Mesh-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="dbl_ROUNDLESG_001_ncl1_4-material" target="#dbl_ROUNDLESG_001_ncl1_4-material">
+                <bind_vertex_input semantic="ROUNDLESG_006Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ROUNDLESG_006Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="dbl_ROUNDLESG_002_ncl1_4-material" target="#dbl_ROUNDLESG_002_ncl1_4-material">
+                <bind_vertex_input semantic="ROUNDLESG_006Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ROUNDLESG_006Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="ROUNDLESG_005" name="ROUNDLESG_005" type="NODE">
+        <matrix sid="transform">0.0254 0 0 -1.054998 0 0.0254 -1.11027e-9 -0.9430177 0 1.11027e-9 0.0254 0.3645729 0 0 0 1</matrix>
+        <instance_geometry url="#ROUNDLESG_005Mesh-mesh">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="dbl_ROUNDLESG_001_ncl1_5-material" target="#dbl_ROUNDLESG_001_ncl1_5-material">
+                <bind_vertex_input semantic="ROUNDLESG_005Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ROUNDLESG_005Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+              <instance_material symbol="dbl_ROUNDLESG_002_ncl1_5-material" target="#dbl_ROUNDLESG_002_ncl1_5-material">
+                <bind_vertex_input semantic="ROUNDLESG_005Mesh-mesh-map-0" input_semantic="TEXCOORD" input_set="0"/>
+                <bind_vertex_input semantic="ROUNDLESG_005Mesh-mesh-map-1" input_semantic="TEXCOORD" input_set="1"/>
+              </instance_material>
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#Scene"/>
+  </scene>
+</COLLADA>

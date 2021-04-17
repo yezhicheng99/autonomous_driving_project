@@ -1,0 +1,90 @@
+<?xml version="1.0"?>
+<robot name="front_wheel" xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <!-- Wheels -->
+  <xacro:property name="wheel_radius" value="0.029" /> 
+  <xacro:property name="wheel_height" value="0.02" />
+  <xacro:property name="wheel_mass" value="0.1" /> <!-- in kg-->
+  
+  <xacro:macro name="cylinder_inertia" params="m r h">
+    <inertia  ixx="${m*(3*r*r+h*h)/12}" ixy="0" ixz="0"
+              iyy="${m*(3*r*r+h*h)/12}" iyz="0"
+              izz="${m*r*r/2}" /> 
+  </xacro:macro>
+  
+  <xacro:macro name="front_wheel" params="fr lr parent origin_x origin_y origin_z"> <!--fr : front, rear ; lr: left, right -->
+    <link name="${fr}_${lr}_wheel">
+      <visual>
+        <origin xyz="0 0 0" rpy="1.57 0 0" /> 
+        <geometry>
+          <mesh filename="package://myhamster_simulation/meshes/hamster_wheel.dae" />
+        </geometry>
+      </visual>
+      <collision>
+        <origin xyz="0 0 0" rpy="1.57 0 0" />
+        <geometry>
+          <cylinder length="0.008" radius="${wheel_radius}" />
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="${wheel_mass}" />
+        <origin xyz="0 0 0" rpy="1.57 0 0" />
+        <cylinder_inertia  m="${wheel_mass}" r="${wheel_radius}" h="${wheel_height}" />
+      </inertial>
+    </link>
+
+    <link name="${fr}_${lr}_wheel_steering">
+      <collision>
+        <origin xyz="0 0.02 0" rpy="0 0 0" />
+        <geometry>
+          <cylinder length="0.001" radius="0.001" />
+        </geometry>
+      </collision>
+      <inertial>
+        <mass value="0.1" />
+        <origin xyz="0 0 0" rpy="0 0 0" />
+        <cylinder_inertia  m="0.1" r="0.01" h="0.01" />
+      </inertial>
+    </link>
+
+    <!-- <gazebo reference="${fr}_${lr}_wheel">
+      <mu1>100</mu1>
+      <mu2>100</mu2>
+      <dampingFactor>0.1</dampingFactor>
+      <minDepth>0.01</minDepth>
+      <selfCollide>false</selfCollide>
+      <maxContacts>20</maxContacts>
+    </gazebo> -->
+
+    <gazebo reference="${fr}_${lr}_wheel">
+      <mu1>0.7</mu1>
+      <mu2>0.7</mu2>
+      <kp>500000.0</kp>
+      <kd>10.0</kd>
+      <minDepth>0.002</minDepth>
+      <maxVel>0.1</maxVel>
+      <fdir1>1 0 0</fdir1>
+      <maxContacts>20</maxContacts>
+      <!-- <material>Gazebo/FlatBlack</material> -->
+    </gazebo>
+
+    <joint name="${fr}_${lr}_wheel_joint" type="continuous">
+      <parent link="${fr}_${lr}_wheel_steering"/>
+      <child link="${fr}_${lr}_wheel"/>
+      <origin xyz="0 0 0" rpy="0 0 0" /> 
+      <axis xyz="0 1 0" rpy="0 0 0" />
+      <limit effort="-1" velocity="-1"/>
+      <!-- <dynamics friction="0.5" damping="0.7" /> -->
+    </joint>
+
+    <joint name="${fr}_${lr}_wheel_steering_joint" type="continuous">
+      <parent link="${parent}"/>
+      <child link="${fr}_${lr}_wheel_steering"/>
+      <origin xyz="${origin_x} ${origin_y} ${origin_z}" rpy="0 0 0" /> 
+      <axis xyz="0 0 1" rpy="0 0 0" />
+      <limit effort="30" velocity="1.5" lower="-0.296706" upper="0.296706"/>
+      <!-- <dynamics damping="0.7"/> -->
+    </joint>
+ 
+  </xacro:macro>
+</robot>

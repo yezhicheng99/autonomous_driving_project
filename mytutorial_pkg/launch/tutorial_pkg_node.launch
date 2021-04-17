@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="mytutorial_pkg" type="mytutorial_pkg_node" name="mytutorial_pkg_node" output="screen">
+    <remap from="/camera/rgb/image_raw" to="/camera/color/image_raw"/>
+    <param name="print_brightness" value="false"/>
+  </node>
+</launch>

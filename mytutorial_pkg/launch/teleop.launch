@@ -1,0 +1,6 @@
+<launch>
+  <node pkg="mytutorial_pkg" type="keyboard.py" name="keyboard" output="screen">
+    <!--<remap from="/ackermann_cmd" to="/hamster/ackermann_cmd"/>-->
+  </node>
+
+</launch>

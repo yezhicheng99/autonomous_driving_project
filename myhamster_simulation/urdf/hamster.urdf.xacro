@@ -1,0 +1,299 @@
+<?xml version="1.0"?>
+
+<robot name="hamster" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <xacro:include filename="$(find myhamster_simulation)/urdf/front_wheel.urdf.xacro" />
+  <xacro:include filename="$(find myhamster_simulation)/urdf/rear_wheel.urdf.xacro" />
+
+  <xacro:macro name="solid_cuboid_inertia" params="w h d m"> 
+  <inertia  ixx="${m*(h*h+d*d)/12}" ixy = "0" ixz = "0"
+            iyy="${m*(w*w+d*d)/12}" iyz = "0"
+            izz="${m*(w*w+h*h)/12}" /> 
+  </xacro:macro>
+
+  <xacro:arg name="agent" default="agent1" />
+  <xacro:arg name="robot_version" default="V6"/>
+
+  <xacro:property name="version" value="$(arg robot_version)"/>
+
+  <link name="dummy"/>
+
+  <link name="base_link">
+    <inertial>
+      <mass value="3.0" />
+      <solid_cuboid_inertia w="0.1" h="0.1" d="0.3" m="3.0"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <mesh filename="package://myhamster_simulation/meshes/shell.dae" />
+      </geometry>
+    </visual>
+    <collision>
+      <geometry>
+        <box size="0.25 0.09 0.02" />
+      </geometry>
+    </collision>
+  </link>
+
+  <link name="imu_link">
+    <inertial>
+      <mass value="0.01" />
+      <solid_cuboid_inertia w="0.05" h="0.05" d="0.07" m="0.01"/>
+    </inertial>
+    <visual>
+      <geometry>
+        <box size="0.01 0.01 0.01" />
+      </geometry>
+    </visual>
+    </link>
+
+  <joint name="dummy_link_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="dummy" />
+    <child  link="base_link" />
+  </joint>
+
+  <joint name="imu_link_joint" type="fixed">
+    <origin xyz="0 0 0" rpy="0 0 0" />
+    <parent link="base_link" />
+    <child  link="imu_link" />
+  </joint>
+
+  <joint name="hokuyo_joint" type="fixed">
+    <axis xyz="0 1 0" />
+    <origin xyz="-0.05 0 0.09" rpy="0 0 0"/>
+    <parent link="base_link"/>
+    <child link="lidar_link"/>
+  </joint>
+
+  <joint name="camera_joint" type="fixed">
+    <xacro:if value="${version == 'V7'}">
+      <origin xyz="0.12673 0 0.028" rpy="0 0 0"/>
+    </xacro:if>
+      <xacro:if value="${version == 'V6'}">
+      <origin xyz="0.1 0 0.02" rpy="0 0 0"/>
+    </xacro:if>
+    <parent link="base_link"/>
+    <child link="camera_link"/>
+  </joint>
+
+
+  <xacro:if value="${version == 'V7'}">
+    <link name="camera_optical_frame_link"/>
+      <joint name="camera_optical_joint" type="fixed">
+        <origin xyz="0 0 0" rpy="-1.57 0 -1.57"/>
+        <parent link="camera_link"/>
+        <child link="camera_optical_frame_link"/>
+      </joint>
+  </xacro:if>
+
+  <!-- Hokuyo Laser -->
+  <link name="lidar_link">
+    <visual>
+      <geometry>
+        <mesh filename="package://myhamster_simulation/meshes/A2_lidar.dae" />
+      </geometry>
+    </visual>
+  </link>
+
+  <link name="camera_link">
+    <collision>
+      <geometry>
+    <box size="0.01 0.01 0.01"/>
+      </geometry>
+    </collision>
+    <visual>
+      <geometry>
+        <xacro:if value="${version == 'V7'}">
+        <mesh filename="package://myhamster_simulation/meshes/d415.stl" />
+        </xacro:if>
+        <xacro:if value="${version == 'V6'}">
+        <mesh filename="package://myhamster_simulation/meshes/camera.stl" />
+        </xacro:if>
+      </geometry>
+      <material name="red"/>
+    </visual>
+    <inertial>
+      <mass value="1e-5" />
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6" />
+    </inertial>
+  </link>
+
+  <front_wheel fr="front" lr="right" parent="base_link" origin_x="0.08" origin_y="-0.086" origin_z="-0.01"/>
+  <front_wheel fr="front" lr="left" parent="base_link" origin_x="0.08" origin_y="0.086" origin_z="-0.01"/>
+  <rear_wheel fr="rear" lr="right" parent="base_link" origin_x="-0.085" origin_y="-0.086" origin_z="-0.01"/>
+  <rear_wheel fr="rear" lr="left" parent="base_link" origin_x="-0.085" origin_y="0.086" origin_z="-0.01"/> 
+
+  <gazebo>
+    <plugin name="gazebo_ros_control" filename="libgazebo_ros_control.so">
+      <robotNamespace></robotNamespace>
+      <robotSimType>gazebo_ros_control/DefaultRobotHWSim</robotSimType>
+      <legacyModeNS>true</legacyModeNS>
+    </plugin>
+  </gazebo>
+
+  <gazebo>
+    <plugin name="gazebo_ackermann_drive" filename="libgazebo_ackermann_drive.so">
+      <robotNamespace></robotNamespace>
+      <robotBaseLink>base_link</robotBaseLink> 
+      <wheelRadius>0.029</wheelRadius>
+      <wheelSeparation>0.17</wheelSeparation>
+      <wheelBase>0.166</wheelBase>
+      <frontLeftWheelJoint>front_left_wheel_joint</frontLeftWheelJoint>
+      <frontRightWheelJoint>front_right_wheel_joint</frontRightWheelJoint>
+      <reartLeftWheelJoint>rear_left_wheel_joint</reartLeftWheelJoint>
+      <rearRightWheelJoint>rear_right_wheel_joint</rearRightWheelJoint>
+      <frontRightWheelSteeringJoint>front_right_wheel_steering_joint</frontRightWheelSteeringJoint>
+      <frontLeftWheelSteeringJoint>front_left_wheel_steering_joint</frontLeftWheelSteeringJoint>
+      <torque>0.01</torque>
+      <baseFrame>base_link</baseFrame>
+      <odomFrame>odom</odomFrame>
+      <odomTopic>odom</odomTopic>
+      <driveTopic>ackermann_cmd</driveTopic>
+      <odomNoiseMean>0.0</odomNoiseMean>
+      <odomNoiseStddev>0.01</odomNoiseStddev>
+      <minSpeed>0.1</minSpeed>
+      <maxSpeed>1.2</maxSpeed>
+      <hamsterRotationPattern>true</hamsterRotationPattern>
+    </plugin>
+  </gazebo>
+
+  <gazebo reference="imu_link">
+    <gravity>true</gravity>
+    <sensor name="imu_sensor" type="imu">
+      <always_on>true</always_on>
+      <update_rate>100</update_rate>
+      <visualize>true</visualize>
+      <topic>__default_topic__</topic>
+      <plugin filename="libgazebo_ros_imu_sensor.so" name="imu_plugin">
+        <topicName>imu</topicName>
+        <bodyName>imu_link</bodyName>
+        <updateRateHZ>10.0</updateRateHZ>
+        <gaussianNoise>0.0</gaussianNoise>
+        <xyzOffset>0 0 0</xyzOffset>
+        <rpyOffset>0 0 0</rpyOffset>
+        <frameName>imu_link</frameName>
+      </plugin>
+    </sensor>
+  </gazebo>
+
+  <gazebo reference="lidar_link">
+    <sensor type="ray" name="head_hokuyo_sensor">
+      <pose>0 0 0 0 0 0</pose>
+      <visualize>false</visualize>
+      <update_rate>10</update_rate>
+      <ray>
+        <scan>
+          <horizontal>
+            <samples>360</samples>
+            <resolution>1</resolution>
+            <min_angle>-3.1415</min_angle>
+            <max_angle>3.1415</max_angle>
+          </horizontal>
+        </scan>
+        <range>
+          <min>0.10</min>
+          <max>12.0</max>
+          <resolution>0.01</resolution>
+        </range>
+        <noise>
+          <type>gaussian</type>
+          <mean>0.0</mean>
+          <stddev>0.01</stddev>
+        </noise>
+      </ray>
+      <plugin name="gazebo_ros_head_hokuyo_controller" filename="libgazebo_ros_laser.so">
+        <topicName>scan</topicName>
+        <frameName>lidar_link</frameName>
+      </plugin>
+    </sensor>
+    <material>Gazebo/DarkGrey</material>
+  </gazebo>
+
+  <xacro:if value="${version == 'V7'}">
+    <gazebo reference="camera_link">
+      <sensor name="depth_camera" type="depth">
+        <update_rate>15</update_rate>
+        <camera>
+          <horizontal_fov>1.5882496</horizontal_fov>
+          <image>
+            <width>640</width>
+            <height>480</height>
+            <format>B8G8R8</format>
+          </image>
+          <clip>
+            <near>0.05</near>
+            <far>200</far>
+          </clip>
+        </camera>
+        <plugin name="camera_controller" filename="libgazebo_ros_openni_kinect.so">
+          <baseline>0.2</baseline>
+          <alwaysOn>true</alwaysOn>
+          <updateRate>30.0</updateRate>
+          <cameraName></cameraName>
+          <imageTopicName>camera/color/image_raw</imageTopicName>
+          <cameraInfoTopicName>camera/color/camera_info</cameraInfoTopicName>
+          <depthImageTopicName>camera/depth/image_raw</depthImageTopicName>
+          <depthImageInfoTopicName>camera/depth/camera_info</depthImageInfoTopicName>
+          <pointCloudTopicName>camera/depth/points</pointCloudTopicName>
+          <frameName>camera_optical_frame_link</frameName>
+          <pointCloudCutoff>0.5</pointCloudCutoff>
+          <pointCloudCutoffMax>5.0</pointCloudCutoffMax>
+          <distortionK1>0.00000001</distortionK1>
+          <distortionK2>0.00000001</distortionK2>
+          <distortionK3>0.00000001</distortionK3>
+          <distortionT1>0.00000001</distortionT1>
+          <distortionT2>0.00000001</distortionT2>
+          <CxPrime>0</CxPrime>
+          <Cx>0</Cx>
+          <Cy>0</Cy>
+          <focalLength>0</focalLength>
+          <hackBaseline>0</hackBaseline>
+        </plugin>
+      </sensor>
+    </gazebo>
+  </xacro:if>
+
+  <xacro:if value="${version == 'V6'}">
+    <gazebo reference="camera_link">
+      <sensor type="camera" name="camera1">
+        <update_rate>30.0</update_rate>
+        <camera name="head">
+          <horizontal_fov>1.3962634</horizontal_fov>
+          <image>
+            <width>800</width>
+            <height>800</height>
+            <format>R8G8B8</format>
+          </image>
+          <clip>
+            <near>0.02</near>
+            <far>300</far>
+          </clip>
+          <noise>
+            <type>gaussian</type>
+            <!-- Noise is sampled independently per pixel on each frame.
+                 That pixel's noise value is added to each of its color
+                 channels, which at that point lie in the range [0,1]. -->
+            <mean>0.0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+        </camera>
+        <plugin name="camera_controller" filename="libgazebo_ros_camera.so">
+          <alwaysOn>true</alwaysOn>
+          <updateRate>0.0</updateRate>
+          <cameraName></cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>camera_link</frameName>
+          <hackBaseline>0.07</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+      </sensor>
+    </gazebo>
+  </xacro:if>
+
+</robot>

@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<sdf version="1.4">
+  <model name="table_and_chairs">
+    <static>true</static>
+    <link name="link">
+      <pose>0 0 0 0 0 0</pose>
+      <collision name="collision">
+        <geometry>
+          <mesh>
+             <uri>model://table_and_chairs/table_and_chairs.dae</uri>
+	     <scale>0.7 0.7 0.7</scale>
+          </mesh>
+        </geometry>
+      </collision>
+      <visual name="visual">
+         <geometry>
+          <mesh>
+            <uri>model://table_and_chairs/table_and_chairs.dae</uri>
+		<scale>0.7 0.7 0.7</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

@@ -1,0 +1,11 @@
+<launch>
+    <include file="$(find myhamster_simulation)/launch/hamster_v7.launch">
+        <arg name="x_pos" value="-0.5"/>
+        <arg name="use_rviz" value="true"/>
+        <arg name="rvizpath" value="$(find myhamster_simulation)/rviz/rviz_slam.rviz"/>
+        <!--<arg name="gazebo_world" value="$(find myhamster_simulation)/worlds/turtlebot3_stage_4.world"/>-->
+    </include>
+
+    <include file="$(find mytutorial_pkg)/launch/gmapping.launch"/>
+
+</launch>
