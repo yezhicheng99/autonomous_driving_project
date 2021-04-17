@@ -45,7 +45,7 @@
     <gazebo reference="${fr}_${lr}_wheel">
       <mu1>0.7</mu1>
       <mu2>0.7</mu2>
-      <kp>500000.0</kp>
+      <kp>50000000.0</kp>
       <kd>10.0</kd>
       <minDepth>0.002</minDepth>
       <maxVel>0.1</maxVel>
