@@ -19,7 +19,7 @@
     <param name="twist_cmd_topic" value="/cmd_vel"/>
     <param name="ackermann_cmd_topic" value="/ackermann_cmd"/>
     <param name="wheelbase" value="0.2"/> <!--0.165-->
-    <param name="move_base/TebLocalPlannerROS/min_turning_radius" value="0.7"/><!--0.3-->
+    <param name="move_base/TebLocalPlannerROS/min_turning_radius" value="0.5"/><!--0.3-->
     <node pkg="mytutorial_pkg" type="cmd_vel_to_ackermann_drive_simple.py" name="velocity_convert_node"/>
 
     <!-- rviz -->
