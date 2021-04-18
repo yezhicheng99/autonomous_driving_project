@@ -10,6 +10,7 @@
   <arg name="pitch" default="0.0"/>
   <arg name="yaw" default="0.0"/>
   <arg name="robot_version" default="V7"/>
+  <arg name="gui" default="true"/>
 
   <!-- load gazebo simulation environment -->
   <env name="GAZEBO_MODEL_PATH" value="$(find myhamster_simulation)/models"/>
@@ -17,8 +18,8 @@
   <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/cogni_office.world"/> <!-- cogni_office -->
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
-    <arg name="world_name" value="$(arg gazebo_world)"/> 
-    <arg name="gui" value="true"/>
+    <arg name="world_name" value="$(arg gazebo_world)"/>
+    <arg name="gui" value="$(arg gui)"/>  
     <arg name="headless" value="false"/>
     <arg name="use_sim_time" value="true"/>
     <arg name="paused" value="false"/>

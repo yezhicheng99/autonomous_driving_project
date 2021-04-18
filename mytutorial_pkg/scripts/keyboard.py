@@ -27,8 +27,8 @@ key_bindings = {
 
 class AckermannDriveKeyop:
     def __init__(self):
-        self.max_speed = float(rospy.get_param('~max_speed',0.5))
-        self.max_steering_angle = float(rospy.get_param('~max_steering_angle',0.4))
+        self.max_speed = float(rospy.get_param('~max_speed',1.2))
+        self.max_steering_angle = float(rospy.get_param('~max_steering_angle',0.5))
         self.cmd_topic = rospy.get_param('~topic','/ackermann_cmd')
         self.frame = rospy.get_param('~frame','base_link')
 

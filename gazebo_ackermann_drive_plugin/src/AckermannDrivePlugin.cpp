@@ -114,7 +114,7 @@ void AckermannDrivePlugin::Update(const common::UpdateInfo &info) {
         // Steering constraints
         //
 
-        auto steering = fmax(-0.4, fmin(0.4, currentCommand_.drive.steering_angle));
+        auto steering = fmax(-0.5, fmin(0.5, currentCommand_.drive.steering_angle));
 
         auto linearVelocity = (double)currentCommand_.drive.speed / wheelRadius_;
 
