@@ -233,6 +233,7 @@ void AckermannDrivePlugin::publishOdometry() {
     nav_msgs::Odometry odomMsg;
 
     odomMsg.header.frame_id = odomFrame_;
+    odomMsg.child_frame_id = baseFrame_;
     odomMsg.header.stamp = ros::Time::now();
 
     odomMsg.pose.pose.position.x = xPose;
