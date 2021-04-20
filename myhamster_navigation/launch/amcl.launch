@@ -2,7 +2,7 @@
 	<node pkg="amcl" type="amcl" name="amcl" output="screen">
 		<rosparam file="$(find myhamster_navigation)/param/amcl_params.yaml" command="load" />
 
-	  <param name="initial_pose_x" value="0"/>
+	    <param name="initial_pose_x" value="0"/>
 		<param name="initial_pose_y" value="0"/>
 		<param name="initial_pose_a" value="0"/>
 	</node>

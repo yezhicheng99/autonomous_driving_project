@@ -1,0 +1,25 @@
+<launch>
+  <!-- Arguments -->
+  <arg name="slam_methods" default="karto" doc="slam type [gmapping, cartographer, hector, karto, frontier_exploration]"/>
+  <arg name="configuration_basename" default="myhamster_lds_2d_gazebo.lua"/>
+  <arg name="open_rviz" default="true"/>
+  <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/my_world1.world"/>
+
+  <!-- myhamster -->
+  <include file="$(find myhamster_simulation)/launch/hamster_v7.launch">
+      <arg name="gazebo_world" value="$(arg gazebo_world)"/>
+      <arg name="x_pos" value="-1.1"/>
+      <arg name="y_pos" value="-0.65"/>
+  </include>
+
+  <!-- SLAM: Gmapping, Cartographer, Hector, Karto, Frontier_exploration, RTAB-Map -->
+  <include file="$(find myhamster_slam)/launch/myhamster_$(arg slam_methods).launch">
+    <arg name="configuration_basename" value="$(arg configuration_basename)"/>
+  </include>
+
+  <!-- rviz -->
+  <group if="$(arg open_rviz)"> 
+    <node pkg="rviz" type="rviz" name="rviz" required="true"
+          args="-d $(find myhamster_slam)/rviz/myhamster_$(arg slam_methods).rviz"/>
+  </group>
+</launch>

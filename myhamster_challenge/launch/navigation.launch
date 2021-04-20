@@ -1,0 +1,42 @@
+<launch>
+
+    <param name="use_sim_time" value="true"/>
+    <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/my_world1.world"/>
+    
+    <!-- myhamster -->
+    <include file="$(find myhamster_simulation)/launch/hamster_v7.launch">
+        <arg name="gazebo_world" value="$(arg gazebo_world)"/>
+        <arg name="x_pos" value="-1.1"/>
+        <arg name="y_pos" value="-0.65"/>
+    </include>
+
+    <!-- move_base -->
+    <include file="$(find myhamster_navigation)/launch/move_base.launch">
+        <!--<arg name="local_planner" value="dwa"/>-->
+    </include>
+
+	<!-- Map server -->
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find myhamster_challenge)/map/map.yaml" output="screen">
+        <param name="frame_id" value="map"/>
+	</node>
+
+    <!-- AMCL -->
+	<node pkg="amcl" type="amcl" name="amcl" output="screen">
+		<rosparam file="$(find myhamster_navigation)/param/amcl_params.yaml" command="load" />
+	    <param name="initial_pose_x" value="-1.1"/>
+		<param name="initial_pose_y" value="-0.65"/>
+		<param name="initial_pose_a" value="0"/>
+	</node>
+
+
+    <!-- velocity conversion -->
+    <param name="twist_cmd_topic" value="/cmd_vel"/>
+    <param name="ackermann_cmd_topic" value="/ackermann_cmd"/>
+    <param name="wheelbase" value="0.2"/> <!--0.165-->
+    <param name="move_base/TebLocalPlannerROS/min_turning_radius" value="0.4"/><!--0.3-->
+    <node pkg="mytutorial_pkg" type="cmd_vel_to_ackermann_drive_simple.py" name="velocity_convert_node"/>
+
+    <!-- rviz -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find myhamster_navigation)/rviz/rviz_navigation.rviz"/>
+
+</launch>

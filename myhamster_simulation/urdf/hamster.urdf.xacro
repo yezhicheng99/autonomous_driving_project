@@ -145,7 +145,7 @@
       <rearRightWheelJoint>rear_right_wheel_joint</rearRightWheelJoint>
       <frontRightWheelSteeringJoint>front_right_wheel_steering_joint</frontRightWheelSteeringJoint>
       <frontLeftWheelSteeringJoint>front_left_wheel_steering_joint</frontLeftWheelSteeringJoint>
-      <torque>0.01</torque>
+      <torque>1</torque>
       <baseFrame>base_link</baseFrame>
       <odomFrame>odom</odomFrame>
       <odomTopic>odom</odomTopic>
