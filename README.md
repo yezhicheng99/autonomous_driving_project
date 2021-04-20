@@ -11,8 +11,8 @@
 
 
 <p float="left">
-  <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking.gif" width="500" />
-  <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking_2.gif" width="500" />
+  <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking.gif" width="200" />
+  <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking_2.gif" width="200" />
 </p>
 
 ## Side Parking
