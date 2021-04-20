@@ -40,7 +40,7 @@ int main(int argc, char** argv){
 
   // second goal
   // goal.target_pose.pose.position.x = -1.72;
-  // goal.target_pose.pose.position.y = -0.9;
+  // goal.target_pose.pose.position.y = -1.0;
   // goal.target_pose.pose.orientation.z = 0.707;
   // goal.target_pose.pose.orientation.w = 0.707;
 
@@ -111,7 +111,7 @@ int main(int argc, char** argv){
 
   // sixth goal
   goal.target_pose.pose.position.x = 2.4;
-  goal.target_pose.pose.position.y = 0.2;
+  goal.target_pose.pose.position.y = 0.25;
   goal.target_pose.pose.orientation.z = 0.707;
   goal.target_pose.pose.orientation.w = 0.707;
 
