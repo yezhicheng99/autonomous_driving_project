@@ -7,8 +7,8 @@
 ## Reverse Parking
 
 <p float="left">
-  <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking.gif" width="450" />
-  <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking_2.gif" width="450" />
+  <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking.gif" width="420" />
+  <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking_2.gif" width="420" />
 </p>
 
 ## Side Parking
