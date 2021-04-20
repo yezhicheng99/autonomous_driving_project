@@ -3,7 +3,7 @@
 
 ![simulation](https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/env.png?raw=true)
 
-![simulation gif](https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/side_parking.gif|width=50)
+![simulation gif](https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/side_parking.gif = 125x200)
 
 
 
