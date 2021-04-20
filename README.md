@@ -3,7 +3,7 @@
 
 ![simulation](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
 
-![simulation gif](https://github.com/[username]/[reponame]/blob/[branch]/side parking.gif?raw=true)
+![simulation gif](https://github.com/[username]/[reponame]/blob/[branch]/side parking.gif)
 
 
 
