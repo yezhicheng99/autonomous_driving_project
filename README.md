@@ -1,9 +1,10 @@
 
 # Autonomous driving project for ackermann steering/car-like vehicle using ROS
 
-![simulation](https://github.com/[username]/[reponame]/blob/[branch]/image.jpg?raw=true)
+![simulation](https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/env.png?raw=true)
 
-![simulation gif](https://github.com/[username]/[reponame]/blob/[branch]/side parking.gif)
+![simulation gif](https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/side parking.gif?raw=true)
+
 
 
 
