@@ -4,7 +4,7 @@
   <!-- Wheels -->
   <xacro:property name="wheel_radius" value="0.029" /> 
   <xacro:property name="wheel_height" value="0.02" />
-  <xacro:property name="wheel_mass" value="0.1" /> <!-- in kg-->
+  <xacro:property name="wheel_mass" value="0.5" /> <!-- in kg-->
   
   <xacro:macro name="cylinder_inertia" params="m r h">
     <inertia  ixx="${m*(3*r*r+h*h)/12}" ixy="0" ixz="0"
@@ -59,12 +59,12 @@
     <gazebo reference="${fr}_${lr}_wheel">
       <mu1>100.0</mu1>
       <mu2>50.0</mu2>
-      <kp>1000000.0</kp>
-      <kd>10.0</kd>
-      <minDepth>0.002</minDepth>
-      <maxVel>0.1</maxVel>
+      <kp>10000000.0</kp>
+      <kd>1.0</kd>
+      <!--minDepth>0.002</minDepth-->
+      <!--maxVel>0.1</maxVel-->
       <fdir1>1 0 0</fdir1>
-      <maxContacts>20</maxContacts>
+      <!--maxContacts>20</maxContacts-->
       <!-- <material>Gazebo/FlatBlack</material> -->
     </gazebo>
 
