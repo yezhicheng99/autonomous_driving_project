@@ -6,7 +6,7 @@ material course
     {
       texture_unit
       {
-        texture lane1.png
+        texture lane2.png
       }
     }
   }

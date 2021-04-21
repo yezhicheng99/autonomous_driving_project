@@ -10,10 +10,10 @@ from turtlebot3_autorace_camera.cfg import ImageProjectionParamsConfig
 
 class ImageProjection():
     def __init__(self):
-        self.top_x = rospy.get_param("/camera/extrinsic_camera_calibration/top_x", 75)
-        self.top_y = rospy.get_param("/camera/extrinsic_camera_calibration/top_y", 35)
-        self.bottom_x = rospy.get_param("/camera/extrinsic_camera_calibration/bottom_x", 165)
-        self.bottom_y = rospy.get_param("/camera/extrinsic_camera_calibration/bottom_y", 240)
+        self.top_x = rospy.get_param("/camera/extrinsic_camera_calibration/top_x", 120)
+        self.top_y = rospy.get_param("/camera/extrinsic_camera_calibration/top_y", 120)
+        self.bottom_x = rospy.get_param("/camera/extrinsic_camera_calibration/bottom_x", 320)
+        self.bottom_y = rospy.get_param("/camera/extrinsic_camera_calibration/bottom_y", 0)
 
         self.is_calibration_mode = rospy.get_param("~is_extrinsic_camera_calibration_mode", False)
         if self.is_calibration_mode == True:
@@ -78,10 +78,10 @@ class ImageProjection():
             cv_image_calib = np.copy(cv_image_original)
 
             # draw lines to help setting homography variables
-            cv_image_calib = cv2.line(cv_image_calib, (320 - top_x, 240 - top_y), (320 + top_x, 240 - top_y), (0, 0, 255), 1)
-            cv_image_calib = cv2.line(cv_image_calib, (320 - bottom_x, 240 + bottom_y), (320 + bottom_x, 240 + bottom_y), (0, 0, 255), 1)
-            cv_image_calib = cv2.line(cv_image_calib, (320 + bottom_x, 240 + bottom_y), (320 + top_x, 240 - top_y), (0, 0, 255), 1)
-            cv_image_calib = cv2.line(cv_image_calib, (320 - bottom_x, 240 + bottom_y), (320 - top_x, 240 - top_y), (0, 0, 255), 1)
+            cv_image_calib = cv2.line(cv_image_calib, (320 - top_x, 400 - top_y), (320 + top_x, 400 - top_y), (0, 0, 255), 1)
+            cv_image_calib = cv2.line(cv_image_calib, (320 - bottom_x, 400 + bottom_y), (320 + bottom_x, 400 + bottom_y), (0, 0, 255), 1)
+            cv_image_calib = cv2.line(cv_image_calib, (320 + bottom_x, 400 + bottom_y), (320 + top_x, 400 - top_y), (0, 0, 255), 1)
+            cv_image_calib = cv2.line(cv_image_calib, (320 - bottom_x, 400 + bottom_y), (320 - top_x, 400 - top_y), (0, 0, 255), 1)
 
             if self.pub_image_type == "compressed":
                 # publishes calibration image in compressed type
@@ -96,7 +96,7 @@ class ImageProjection():
 
         ## homography transform process
         # selecting 4 points from the original image
-        pts_src = np.array([[320 - top_x, 240 - top_y], [320 + top_x, 240 - top_y], [320 + bottom_x, 240 + bottom_y], [320 - bottom_x, 240 + bottom_y]])
+        pts_src = np.array([[320 - top_x, 400 - top_y], [320 + top_x, 400 - top_y], [320 + bottom_x, 400 + bottom_y], [320 - bottom_x, 400 + bottom_y]])
 
         # selecting 4 points from image that will be transformed
         pts_dst = np.array([[200, 0], [800, 0], [800, 600], [200, 600]])

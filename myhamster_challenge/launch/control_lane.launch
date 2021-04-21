@@ -1,0 +1,7 @@
+<launch>
+  <!-- lane control -->
+  <node pkg="myhamster_challenge" type="control_lane" name="control_lane" output="screen">
+    <remap from="/control/lane" to="/detect/lane" />
+    <remap from="/control/cmd_vel" to="/cmd_vel" />
+  </node>
+</launch>

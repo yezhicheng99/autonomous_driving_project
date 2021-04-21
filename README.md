@@ -4,8 +4,10 @@
 ## Simulation
 <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/env.png" width="900">
 
-## Reverse Parking
+## Curve Driving
+<img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/s_shape.gif" width="500">
 
+## Reverse Parking
 <p float="left">
   <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking.gif" width="400" />
   <img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/reverse_parking_2.gif" width="400" />

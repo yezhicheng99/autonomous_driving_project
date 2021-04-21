@@ -52,6 +52,7 @@
       <fdir1>1 0 0</fdir1>
       <!-- <material>Gazebo/FlatBlack</material> -->
       <!--maxContacts>20</maxContacts-->
+      <material>Gazebo/Blue</material>
     </gazebo>
 
     <joint name="${fr}_${lr}_wheel_joint" type="continuous">

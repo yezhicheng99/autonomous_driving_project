@@ -35,6 +35,10 @@
     </collision>
   </link>
 
+  <gazebo reference="base_link">
+    <material>Gazebo/Green</material>
+  </gazebo>
+
   <link name="imu_link">
     <inertial>
       <mass value="0.01" />
