@@ -1,5 +1,0 @@
-<launch>
-    <node pkg="myhamster_challenge" type="simple_navigation_goals" name="send_goal_node" output="screen" />
-
-
-</launch>

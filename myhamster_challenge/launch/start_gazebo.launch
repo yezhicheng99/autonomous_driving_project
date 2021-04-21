@@ -6,13 +6,9 @@
     <!-- myhamster -->
     <include file="$(find myhamster_simulation)/launch/hamster_v7.launch">
         <arg name="gazebo_world" value="$(arg gazebo_world)"/>
-        <arg name="x_pos" value="1.0"/>
-        <arg name="y_pos" value="1.15"/>
-        <arg name="yaw" default="2.8"/>
+        <arg name="x_pos" value="-1.1"/>
+        <arg name="y_pos" value="-0.65"/>
     </include>
-
-    <include file="$(find myhamster_challenge)/launch/lane_detect.launch"/>
-    <include file="$(find myhamster_challenge)/launch/control_lane.launch"/>
 
     <!-- velocity conversion -->
     <param name="twist_cmd_topic" value="/cmd_vel"/>

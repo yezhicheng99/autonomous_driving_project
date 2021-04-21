@@ -41,6 +41,8 @@ Tested on:
 
 ### 2.1 SLAM demo:
 
+<img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/slam.png" width="500">
+
 #### 2.1.1 Run SLAM launch file:
 
     roslaunch myhamster_slam myhamster_slam.launch slam_methods:=gmapping
@@ -58,6 +60,8 @@ Tested on:
 
 ### 2.2 Autonomous Navigation:
 
+<img src="https://github.com/yezhicheng99/autonomous_driving_project/blob/master/readme/navigation.png" width="500">
+
 #### 2.2.1 Run the Gazebo environment:
 
     roslaunch myhamster_navigation navigation.launch 
@@ -69,12 +73,31 @@ Send goal in rviz:
 
 
 
-### 2.3 Running Parking demo:
+### 2.3 Single Task Demo:
 
 #### 2.3.1 Start simulation environment
-    roslaunch myhamster_challenge navigation.launch
+    roslaunch myhamster_challenge start_gazebo.launch
 
-#### 2.3.2 Run goal sending node:
-    roslaunch myhamster_challenge send_goal.launch
+#### 2.3.2 Run reverse parking node:
+    roslaunch myhamster_challenge reverse_parking.launch
+
+#### 2.3.3 Run hill climbing node:
+    roslaunch myhamster_challenge up_hill.launch
+
+#### 2.3.4 Run right angle turning node:
+    roslaunch myhamster_challenge right_angle.launch
+
+#### 2.3.5 Run side parking node:
+    roslaunch myhamster_challenge side_parking.launch
+
+#### 2.3.3 Run lane tracking node:
+    roslaunch myhamster_challenge s_shape.launch
 
 
+### 2.4 Run Whole System Demo:
+
+#### 2.4.1 Start simulation environment
+    roslaunch myhamster_challenge start_gazebo.launch
+
+#### 2.4.1 Start control node
+    roslaunch myhamster_challenge autorace_core.launch  

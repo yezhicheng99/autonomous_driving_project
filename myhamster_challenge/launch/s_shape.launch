@@ -1,0 +1,4 @@
+<launch>
+    <include file="$(find myhamster_challenge)/launch/lane_detect.launch"/>
+    <include file="$(find myhamster_challenge)/launch/control_lane.launch"/>
+</launch>

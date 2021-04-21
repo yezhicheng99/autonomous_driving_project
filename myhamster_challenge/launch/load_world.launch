@@ -4,7 +4,7 @@
   <!-- load gazebo simulation environment -->
   <env name="GAZEBO_MODEL_PATH" value="$(find myhamster_simulation)/models"/>
 
-  <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/my_world1.world"/> <!-- cogni_office -->
+  <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/my_world2.world"/> <!-- cogni_office -->
 
   <include file="$(find gazebo_ros)/launch/empty_world.launch">
     <arg name="world_name" value="$(arg gazebo_world)"/>

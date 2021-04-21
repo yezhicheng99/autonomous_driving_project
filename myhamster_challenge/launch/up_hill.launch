@@ -1,0 +1,3 @@
+<launch>
+    <node pkg="myhamster_challenge" type="up_hill" name="up_hill" output="screen"/>
+</launch>

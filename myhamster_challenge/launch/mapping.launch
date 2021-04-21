@@ -3,7 +3,7 @@
   <arg name="slam_methods" default="karto" doc="slam type [gmapping, cartographer, hector, karto, frontier_exploration]"/>
   <arg name="configuration_basename" default="myhamster_lds_2d_gazebo.lua"/>
   <arg name="open_rviz" default="true"/>
-  <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/my_world1.world"/>
+  <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/my_world2.world"/>
 
   <!-- myhamster -->
   <include file="$(find myhamster_simulation)/launch/hamster_v7.launch">

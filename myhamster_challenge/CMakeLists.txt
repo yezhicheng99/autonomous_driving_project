@@ -27,5 +27,11 @@ catkin_package(
 ## Build talker and listener
 include_directories(include ${catkin_INCLUDE_DIRS})
 
-add_executable(simple_navigation_goals src/simple_navigation_goals.cpp)
-target_link_libraries(simple_navigation_goals ${catkin_LIBRARIES})
+add_executable(reverse_parking src/reverse_parking.cpp)
+target_link_libraries(reverse_parking ${catkin_LIBRARIES})
+
+add_executable(right_angle src/right_angle.cpp)
+target_link_libraries(right_angle ${catkin_LIBRARIES})
+
+add_executable(side_parking src/side_parking.cpp)
+target_link_libraries(side_parking ${catkin_LIBRARIES})

@@ -1,0 +1,6 @@
+<launch>
+
+    <!-- image brightness & contrast compensation of ground-projected image -->
+    <node pkg="myhamster_challenge" type="core_node_controller" name="core_node_controller" output="screen" />
+    
+</launch>

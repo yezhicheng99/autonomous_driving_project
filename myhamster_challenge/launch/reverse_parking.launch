@@ -1,0 +1,25 @@
+<launch>
+
+    <!-- move_base -->
+    <include file="$(find myhamster_navigation)/launch/move_base.launch">
+        <!--<arg name="local_planner" value="dwa"/>-->
+    </include>
+
+	<!-- Map server -->
+	<node name="map_server" pkg="map_server" type="map_server" args="$(find myhamster_challenge)/map/map.yaml" output="screen">
+        <param name="frame_id" value="map"/>
+	</node>
+
+    <!-- AMCL -->
+	<node pkg="amcl" type="amcl" name="amcl" output="screen">
+		<rosparam file="$(find myhamster_navigation)/param/amcl_params.yaml" command="load" />
+	    
+        <param name="initial_pose_x" value="-1.1"/>
+		<param name="initial_pose_y" value="-0.65"/>
+		<param name="initial_pose_a" value="0"/>
+        
+	</node>
+
+    <node pkg="myhamster_challenge" type="reverse_parking" name="reverse_parking" output="screen" />
+
+</launch>

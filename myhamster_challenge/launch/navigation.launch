@@ -1,7 +1,7 @@
 <launch>
 
     <param name="use_sim_time" value="true"/>
-    <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/my_world1.world"/>
+    <arg name="gazebo_world" default="$(find myhamster_simulation)/worlds/my_world2.world"/>
     
     <!-- myhamster -->
     <include file="$(find myhamster_simulation)/launch/hamster_v7.launch">
@@ -36,7 +36,7 @@
     <param name="move_base/TebLocalPlannerROS/min_turning_radius" value="0.4"/><!--0.3-->
     <node pkg="mytutorial_pkg" type="cmd_vel_to_ackermann_drive_simple.py" name="velocity_convert_node"/>
 
-    <!-- rviz 
+    <!-- rviz -->
     <node name="rviz" pkg="rviz" type="rviz" args="-d $(find myhamster_navigation)/rviz/rviz_navigation.rviz"/>
-    -->
+    
 </launch>
